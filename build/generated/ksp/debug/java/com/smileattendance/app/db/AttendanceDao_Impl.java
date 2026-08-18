@@ -139,14 +139,12 @@ public final class AttendanceDao_Impl implements AttendanceDao {
   }
 
   @Override
-  public Object getLastForUserSince(final long userId, final long sinceMillis,
+  public Object getLastForUser(final long userId,
       final Continuation<? super AttendanceRecord> $completion) {
-    final String _sql = "SELECT * FROM attendance_records WHERE userId = ? AND timestampMillis >= ? ORDER BY timestampMillis DESC LIMIT 1";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
+    final String _sql = "SELECT * FROM attendance_records WHERE userId = ? ORDER BY timestampMillis DESC LIMIT 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     _statement.bindLong(_argIndex, userId);
-    _argIndex = 2;
-    _statement.bindLong(_argIndex, sinceMillis);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
     return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<AttendanceRecord>() {
       @Override

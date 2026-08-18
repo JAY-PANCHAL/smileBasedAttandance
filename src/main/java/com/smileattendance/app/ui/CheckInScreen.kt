@@ -59,7 +59,6 @@ import com.smileattendance.app.ui.theme.DangerContainer
 import com.smileattendance.app.ui.theme.Success
 import com.smileattendance.app.ui.theme.SuccessContainer
 import com.smileattendance.app.ui.theme.Warning
-import com.smileattendance.app.ui.theme.WarningContainer
 
 @Composable
 fun CheckInScreen(
@@ -258,8 +257,6 @@ private fun smileColor(probability: Float): Color = when {
 private fun OutcomeIcon(outcome: CheckInOutcome) {
     val (icon, tint) = when (outcome) {
         is CheckInOutcome.Success -> Icons.Filled.CheckCircle to Success
-        is CheckInOutcome.TooSoon -> Icons.Filled.CheckCircle to Warning
-        is CheckInOutcome.AlreadyCheckedOut -> Icons.Filled.CheckCircle to Warning
         is CheckInOutcome.NoMatch -> Icons.Filled.PersonOff to Danger
         CheckInOutcome.NoEnrolledUsers -> Icons.Filled.PersonOff to Danger
     }
@@ -277,19 +274,6 @@ private fun OutcomeCard(outcome: CheckInOutcome) {
                 "${outcome.user.name} (ID ${outcome.user.uniqueNumber}) · match ${(outcome.record.matchConfidence * 100).toInt()}%"
             )
         }
-        is CheckInOutcome.TooSoon -> {
-            val minutesAgo = ((System.currentTimeMillis() - outcome.lastRecord.timestampMillis) / 60000).toInt()
-            OutcomeStyle(
-                WarningContainer, Warning,
-                "Already checked in",
-                "${outcome.user.name} checked in ${if (minutesAgo <= 0) "just now" else "$minutesAgo min ago"}. Scan again later to check out."
-            )
-        }
-        is CheckInOutcome.AlreadyCheckedOut -> OutcomeStyle(
-            WarningContainer, Warning,
-            "Already checked out",
-            "${outcome.user.name} has already checked in and out today. Nothing more to record."
-        )
         is CheckInOutcome.NoMatch -> OutcomeStyle(
             DangerContainer, Danger,
             "Face not recognized",

@@ -16,24 +16,11 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import java.util.Calendar
 
 sealed class CheckInOutcome {
     data class Success(
         val user: EnrolledUser,
         val record: AttendanceRecord
-    ) : CheckInOutcome()
-
-    /** Scanned again too soon after check-in — not yet time for a check-out. */
-    data class TooSoon(
-        val user: EnrolledUser,
-        val lastRecord: AttendanceRecord
-    ) : CheckInOutcome()
-
-    /** Already has both a check-in and check-out for today — nothing more to record. */
-    data class AlreadyCheckedOut(
-        val user: EnrolledUser,
-        val lastRecord: AttendanceRecord
     ) : CheckInOutcome()
 
     data class NoMatch(val bestScore: Float) : CheckInOutcome()
@@ -94,9 +81,9 @@ class AttendanceRepository(private val context: Context) {
     }
 
     /**
-     * Embed the smiling face, match against enrolled users, and record either a check-in or
-     * check-out: the first scan of the day is a check-in, the next one (after the cooldown) is
-     * a check-out, and further scans that day are rejected as already-checked-out.
+     * Embed the smiling face, match against enrolled users, and record a check-in or check-out.
+     * Every scan simply flips the person's last state — no time restriction — so someone can
+     * check in and out as many times a day as they actually walk through the gate.
      */
     suspend fun checkIn(faceBitmap: Bitmap, smileProbability: Float): CheckInOutcome {
         val allUsers = cachedUsers.value
@@ -112,17 +99,11 @@ class AttendanceRepository(private val context: Context) {
             return CheckInOutcome.NoMatch(bestScore)
         }
 
-        val lastToday = db.attendanceDao().getLastForUserSince(bestUser.id, startOfTodayMillis())
-
-        val type = when {
-            lastToday == null -> AttendanceType.CHECK_IN
-            lastToday.type == AttendanceType.CHECK_OUT -> {
-                return CheckInOutcome.AlreadyCheckedOut(bestUser, lastToday)
-            }
-            System.currentTimeMillis() - lastToday.timestampMillis < CHECK_IN_COOLDOWN_MILLIS -> {
-                return CheckInOutcome.TooSoon(bestUser, lastToday)
-            }
-            else -> AttendanceType.CHECK_OUT
+        val lastRecord = db.attendanceDao().getLastForUser(bestUser.id)
+        val type = if (lastRecord == null || lastRecord.type == AttendanceType.CHECK_OUT) {
+            AttendanceType.CHECK_IN
+        } else {
+            AttendanceType.CHECK_OUT
         }
 
         val prefix = if (type == AttendanceType.CHECK_IN) "checkin" else "checkout"
@@ -143,22 +124,8 @@ class AttendanceRepository(private val context: Context) {
         return CheckInOutcome.Success(bestUser, record)
     }
 
-    private fun startOfTodayMillis(): Long {
-        val calendar = Calendar.getInstance().apply {
-            set(Calendar.HOUR_OF_DAY, 0)
-            set(Calendar.MINUTE, 0)
-            set(Calendar.SECOND, 0)
-            set(Calendar.MILLISECOND, 0)
-        }
-        return calendar.timeInMillis
-    }
-
     fun close() {
         embedder.close()
         repositoryScope.cancel()
-    }
-
-    companion object {
-        const val CHECK_IN_COOLDOWN_MILLIS = 5 * 60 * 1000L
     }
 }

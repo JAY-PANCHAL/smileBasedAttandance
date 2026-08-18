@@ -25,6 +25,6 @@ interface AttendanceDao {
     @Query("SELECT * FROM attendance_records ORDER BY timestampMillis DESC")
     fun observeAll(): Flow<List<AttendanceRecord>>
 
-    @Query("SELECT * FROM attendance_records WHERE userId = :userId AND timestampMillis >= :sinceMillis ORDER BY timestampMillis DESC LIMIT 1")
-    suspend fun getLastForUserSince(userId: Long, sinceMillis: Long): AttendanceRecord?
+    @Query("SELECT * FROM attendance_records WHERE userId = :userId ORDER BY timestampMillis DESC LIMIT 1")
+    suspend fun getLastForUser(userId: Long): AttendanceRecord?
 }
