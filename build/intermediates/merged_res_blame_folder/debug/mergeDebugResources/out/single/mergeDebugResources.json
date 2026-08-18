@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.smileattendance.app-debug-70:/xml_file_paths.xml.flat",
+        "source": "com.smileattendance.app-main-72:/xml/file_paths.xml"
+    },
+    {
+        "merged": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-debug-70:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-main-72:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-debug-70:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-main-72:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-debug-70:/drawable_ic_logo.xml.flat",
+        "source": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-main-72:/drawable/ic_logo.xml"
+    },
+    {
+        "merged": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-debug-70:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/mindtechm2/.gradle/daemon/8.7/com.smileattendance.app-main-72:/mipmap-anydpi-v26/ic_launcher.xml"
+    }
+]

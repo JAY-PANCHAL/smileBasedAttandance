@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#4CAF50</color>
+    <color name="splash_background">#00695C</color>
+    <string name="app_name">Smile Attendance</string>
+    <style name="Theme.SmileAttendance" parent="android:Theme.Material.Light.NoActionBar"/>
+    <style name="Theme.SmileAttendance.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.SmileAttendance</item>
+    </style>
+</resources>

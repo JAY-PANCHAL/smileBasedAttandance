@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Face -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,27 a27,27 0 1,0 0.1,0 z" />
+    <!-- Eyes -->
+    <path
+        android:fillColor="#00695C"
+        android:pathData="M45,51 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 M57,51 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+    <!-- Smile -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00695C"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M43,62 Q54,74 65,62" />
+    <!-- Checkmark badge -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M76,66 a13,13 0 1,0 0.1,0 z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M70,66 L74.5,70.5 L82,60" />
+</vector>

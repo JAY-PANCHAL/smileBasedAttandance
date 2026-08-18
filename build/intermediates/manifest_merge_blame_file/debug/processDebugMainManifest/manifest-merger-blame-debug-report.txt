@@ -1,0 +1,289 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.smileattendance.app"
+4    android:versionCode="1"
+5    android:versionName="0.1.0-mvp" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:4:5-65
+11-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:4:22-62
+12
+13    <uses-feature
+13-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:5-84
+14        android:name="android.hardware.camera"
+14-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:19-57
+15        android:required="true" />
+15-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:58-81
+16    <uses-feature
+16-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:7:5-95
+17        android:name="android.hardware.camera.autofocus"
+17-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:7:19-67
+18        android:required="false" />
+18-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:7:68-92
+19
+20    <permission
+20-->[androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+21        android:name="com.smileattendance.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.smileattendance.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+24-->[androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+25    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+27-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
+28
+29    <application
+29-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:9:5-36:19
+30        android:allowBackup="true"
+30-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:10:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:icon="@mipmap/ic_launcher"
+34-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:11:9-43
+35        android:label="@string/app_name"
+35-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:12:9-41
+36        android:supportsRtl="true"
+36-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:13:9-35
+37        android:testOnly="true"
+38        android:theme="@style/Theme.SmileAttendance" >
+38-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:14:9-53
+39        <activity
+39-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:16:9-25:20
+40            android:name="com.smileattendance.app.MainActivity"
+40-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:17:13-41
+41            android:exported="true"
+41-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:18:13-36
+42            android:screenOrientation="portrait"
+42-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:19:13-49
+43            android:theme="@style/Theme.SmileAttendance.Splash" >
+43-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:20:13-64
+44            <intent-filter>
+44-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:21:13-24:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:22:17-69
+45-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:22:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:23:17-77
+47-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:23:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <provider
+52            android:name="androidx.core.content.FileProvider"
+52-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:28:13-62
+53            android:authorities="com.smileattendance.app.fileprovider"
+53-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:29:13-64
+54            android:exported="false"
+54-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:30:13-37
+55            android:grantUriPermissions="true" >
+55-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:31:13-47
+56            <meta-data
+56-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:32:13-34:54
+57                android:name="android.support.FILE_PROVIDER_PATHS"
+57-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:33:17-67
+58                android:resource="@xml/file_paths" />
+58-->/Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:34:17-51
+59        </provider>
+60
+61        <service
+61-->[androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:24:9-33:19
+62            android:name="androidx.camera.core.impl.MetadataHolderService"
+62-->[androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:25:13-75
+63            android:enabled="false"
+63-->[androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:26:13-36
+64            android:exported="false" >
+64-->[androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
+66                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+66-->[androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
+67                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+67-->[androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
+68        </service>
+69        <service
+69-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:9:9-15:19
+70            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+70-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:10:13-91
+71            android:directBootAware="true"
+71-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:17:13-43
+72            android:exported="false" >
+72-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:11:13-37
+73            <meta-data
+73-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:12:13-14:85
+74                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+74-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:13:17-114
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:14:17-82
+76            <meta-data
+76-->[com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:12:13-14:85
+77                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+77-->[com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:13:17-124
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:14:17-82
+79            <meta-data
+79-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:20:13-22:85
+80                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+80-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:21:17-120
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:22:17-82
+82        </service>
+83
+84        <provider
+84-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:9:9-13:38
+85            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+85-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:10:13-78
+86            android:authorities="com.smileattendance.app.mlkitinitprovider"
+86-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:11:13-69
+87            android:exported="false"
+87-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:12:13-37
+88            android:initOrder="99" />
+88-->[com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:13:13-35
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+94
+95        <meta-data
+95-->[com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+96            android:name="com.google.android.gms.version"
+96-->[com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+97            android:value="@integer/google_play_services_version" />
+97-->[com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+98
+99        <activity
+99-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:23:9-25:39
+100            android:name="androidx.activity.ComponentActivity"
+100-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:24:13-63
+101            android:exported="true" />
+101-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:25:13-36
+102        <activity
+102-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+103            android:name="androidx.compose.ui.tooling.PreviewActivity"
+103-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+104            android:exported="true" />
+104-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+105
+106        <provider
+106-->[androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+107            android:name="androidx.startup.InitializationProvider"
+107-->[androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+108            android:authorities="com.smileattendance.app.androidx-startup"
+108-->[androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+109            android:exported="false" >
+109-->[androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+110            <meta-data
+110-->[androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+111-->[androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+112                android:value="androidx.startup" />
+112-->[androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+113            <meta-data
+113-->[androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+114-->[androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
+115                android:value="androidx.startup" />
+115-->[androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+118                android:value="androidx.startup" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+119        </provider>
+120
+121        <service
+121-->[androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+122            android:name="androidx.room.MultiInstanceInvalidationService"
+122-->[androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+123            android:directBootAware="true"
+123-->[androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+124            android:exported="false" />
+124-->[androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+125        <service
+125-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+126            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+126-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+127            android:exported="false" >
+127-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+128            <meta-data
+128-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+129                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+129-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+130                android:value="cct" />
+130-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+131        </service>
+132        <service
+132-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+133            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+133-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+134            android:exported="false"
+134-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+135            android:permission="android.permission.BIND_JOB_SERVICE" >
+135-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+136        </service>
+137
+138        <receiver
+138-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+139            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+139-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+140            android:exported="false" />
+140-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+141        <receiver
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+142            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+143            android:directBootAware="false"
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+144            android:enabled="true"
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+145            android:exported="true"
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+146            android:permission="android.permission.DUMP" >
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+147            <intent-filter>
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+148                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+149            </intent-filter>
+150            <intent-filter>
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+151                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+152            </intent-filter>
+153            <intent-filter>
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+154                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+155            </intent-filter>
+156            <intent-filter>
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+157                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+158            </intent-filter>
+159        </receiver>
+160    </application>
+161
+162</manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.SmileAttendance" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.SmileAttendance.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.SmileAttendance</item>
+    </style>
+</resources>
