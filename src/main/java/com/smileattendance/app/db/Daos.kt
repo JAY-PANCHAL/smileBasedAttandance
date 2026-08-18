@@ -11,9 +11,6 @@ interface EnrolledUserDao {
     suspend fun insert(user: EnrolledUser): Long
 
     @Query("SELECT * FROM enrolled_users")
-    suspend fun getAll(): List<EnrolledUser>
-
-    @Query("SELECT * FROM enrolled_users")
     fun observeAll(): Flow<List<EnrolledUser>>
 
     @Query("DELETE FROM enrolled_users WHERE id = :id")

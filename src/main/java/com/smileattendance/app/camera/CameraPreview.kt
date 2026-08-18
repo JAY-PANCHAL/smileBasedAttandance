@@ -1,6 +1,7 @@
 package com.smileattendance.app.camera
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ExperimentalGetImage
 import androidx.camera.core.ImageAnalysis
@@ -22,6 +23,7 @@ import com.smileattendance.app.ml.SmileFaceAnalyzer
 import java.util.concurrent.Executors
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
+import kotlinx.coroutines.delay
 
 /**
  * Live camera preview that continuously runs face+smile detection on incoming frames
@@ -52,38 +54,50 @@ fun CameraPreview(
     }
 
     LaunchedEffect(lensFacing) {
-        val cameraProvider = getCameraProvider(context)
+        // A kiosk stand runs this for days at a time — a transient bind failure (camera briefly
+        // busy right after boot, etc.) shouldn't leave the check-in screen with a dead camera forever.
+        var attempt = 0
+        while (attempt < MAX_BIND_ATTEMPTS) {
+            try {
+                val cameraProvider = getCameraProvider(context)
 
-        val preview = Preview.Builder().build().also {
-            it.setSurfaceProvider(previewView.surfaceProvider)
-        }
-
-        val imageAnalysis = ImageAnalysis.Builder()
-            .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
-            .build()
-            .also {
-                it.setAnalyzer(cameraExecutor) { imageProxy ->
-                    analyzer.analyze(imageProxy)
+                val preview = Preview.Builder().build().also {
+                    it.setSurfaceProvider(previewView.surfaceProvider)
                 }
+
+                val imageAnalysis = ImageAnalysis.Builder()
+                    .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+                    .build()
+                    .also {
+                        it.setAnalyzer(cameraExecutor) { imageProxy ->
+                            analyzer.analyze(imageProxy)
+                        }
+                    }
+
+                val cameraSelector = CameraSelector.Builder().requireLensFacing(lensFacing).build()
+
+                cameraProvider.unbindAll()
+                cameraProvider.bindToLifecycle(
+                    lifecycleOwner,
+                    cameraSelector,
+                    preview,
+                    imageAnalysis
+                )
+                break
+            } catch (e: Exception) {
+                attempt++
+                Log.e(TAG, "Camera bind attempt $attempt failed", e)
+                if (attempt < MAX_BIND_ATTEMPTS) delay(BIND_RETRY_DELAY_MS)
             }
-
-        val cameraSelector = CameraSelector.Builder().requireLensFacing(lensFacing).build()
-
-        try {
-            cameraProvider.unbindAll()
-            cameraProvider.bindToLifecycle(
-                lifecycleOwner,
-                cameraSelector,
-                preview,
-                imageAnalysis
-            )
-        } catch (e: Exception) {
-            e.printStackTrace()
         }
     }
 
     AndroidView(modifier = modifier.fillMaxSize(), factory = { previewView })
 }
+
+private const val TAG = "CameraPreview"
+private const val MAX_BIND_ATTEMPTS = 3
+private const val BIND_RETRY_DELAY_MS = 1500L
 
 private suspend fun getCameraProvider(context: android.content.Context): ProcessCameraProvider =
     suspendCoroutine { continuation ->

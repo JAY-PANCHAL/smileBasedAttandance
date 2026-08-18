@@ -7,7 +7,15 @@ import com.smileattendance.app.db.AttendanceRecord
 import com.smileattendance.app.db.AttendanceType
 import com.smileattendance.app.db.EnrolledUser
 import com.smileattendance.app.ml.FaceEmbedder
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import java.util.Calendar
 
 sealed class CheckInOutcome {
@@ -36,13 +44,31 @@ class AttendanceRepository(private val context: Context) {
 
     private val db = AppDatabase.get(context)
     private val embedder = FaceEmbedder(context)
+    private val repositoryScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
+    /**
+     * At 800+ scans/day, re-querying and deserializing every enrolled embedding from SQLite on
+     * every camera frame (recognize() runs continuously for the live preview, not just on
+     * check-in) would mean constant disk I/O. Instead we keep one reactive in-memory copy —
+     * 2,000 employees is only ~1.5MB of embeddings — and every lookup just reads this list.
+     * Room's Flow re-emits automatically whenever enrolled_users changes, so this stays current
+     * without any manual invalidation.
+     */
+    private val cachedUsers: StateFlow<List<EnrolledUser>> = db.enrolledUserDao().observeAll()
+        .stateIn(repositoryScope, SharingStarted.Eagerly, emptyList())
+
+    init {
+        // Runs once per app start; deletes old check-in/checkout photo thumbnails only —
+        // the attendance history rows themselves are kept forever.
+        repositoryScope.launch { FileStorage.cleanupOldAttendancePhotos(context) }
+    }
 
     fun observeUsers(): Flow<List<EnrolledUser>> = db.enrolledUserDao().observeAll()
     fun observeAttendance(): Flow<List<AttendanceRecord>> = db.attendanceDao().observeAll()
 
     suspend fun enroll(name: String, uniqueNumber: String, faceBitmap: Bitmap): EnrolledUser {
         val embedding = embedder.embed(faceBitmap)
-        val photoPath = FileStorage.savePhoto(context, faceBitmap, "enroll_${name.replace(" ", "_")}")
+        val photoPath = FileStorage.saveEnrollmentPhoto(context, faceBitmap, "enroll_${name.replace(" ", "_")}")
         val user = EnrolledUser(
             name = name,
             uniqueNumber = uniqueNumber,
@@ -56,7 +82,7 @@ class AttendanceRepository(private val context: Context) {
 
     /** Identifies the face against enrolled users without recording attendance. Used for live preview while framing a shot. */
     suspend fun recognize(faceBitmap: Bitmap): Pair<EnrolledUser, Float>? {
-        val allUsers = db.enrolledUserDao().getAll()
+        val allUsers = cachedUsers.value
         if (allUsers.isEmpty()) return null
 
         val queryEmbedding = embedder.embed(faceBitmap)
@@ -73,7 +99,7 @@ class AttendanceRepository(private val context: Context) {
      * a check-out, and further scans that day are rejected as already-checked-out.
      */
     suspend fun checkIn(faceBitmap: Bitmap, smileProbability: Float): CheckInOutcome {
-        val allUsers = db.enrolledUserDao().getAll()
+        val allUsers = cachedUsers.value
         if (allUsers.isEmpty()) return CheckInOutcome.NoEnrolledUsers
 
         val queryEmbedding = embedder.embed(faceBitmap)
@@ -100,7 +126,7 @@ class AttendanceRepository(private val context: Context) {
         }
 
         val prefix = if (type == AttendanceType.CHECK_IN) "checkin" else "checkout"
-        val photoPath = FileStorage.savePhoto(context, faceBitmap, "${prefix}_${bestUser.name.replace(" ", "_")}")
+        val photoPath = FileStorage.saveAttendancePhoto(context, faceBitmap, "${prefix}_${bestUser.name.replace(" ", "_")}")
 
         val record = AttendanceRecord(
             userId = bestUser.id,
@@ -127,7 +153,10 @@ class AttendanceRepository(private val context: Context) {
         return calendar.timeInMillis
     }
 
-    fun close() = embedder.close()
+    fun close() {
+        embedder.close()
+        repositoryScope.cancel()
+    }
 
     companion object {
         const val CHECK_IN_COOLDOWN_MILLIS = 5 * 60 * 1000L

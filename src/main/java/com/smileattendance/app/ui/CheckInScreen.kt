@@ -20,14 +20,12 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Cameraswitch
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.ErrorOutline
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PersonOff
-import androidx.compose.material.icons.filled.Replay
-import androidx.compose.material3.Button
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -46,6 +44,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import kotlinx.coroutines.delay
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -65,7 +64,7 @@ import com.smileattendance.app.ui.theme.WarningContainer
 @Composable
 fun CheckInScreen(
     viewModel: AttendanceViewModel,
-    onBack: () -> Unit
+    onOpenAdminMenu: () -> Unit
 ) {
     var currentSmileProb by remember { mutableStateOf(0f) }
     var hasTriggered by remember { mutableStateOf(false) }
@@ -79,13 +78,30 @@ fun CheckInScreen(
         viewModel.clearLivePreview()
     }
 
+    // Kiosk mode: nobody is around to dismiss a result, so always resume scanning on its own.
+    LaunchedEffect(outcome) {
+        if (outcome != null) {
+            delay(3000)
+            hasTriggered = false
+            viewModel.clearOutcome()
+        }
+    }
+
+    // If a check-in attempt fails silently (e.g. a transient inference error) busy flips back to
+    // false without ever producing an outcome — un-stick the trigger so the next frame can retry.
+    LaunchedEffect(busy) {
+        if (!busy && outcome == null) {
+            hasTriggered = false
+        }
+    }
+
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text("Check In", fontWeight = FontWeight.Bold) },
                 navigationIcon = {
-                    IconButton(onClick = onBack) {
-                        Icon(Icons.Filled.ArrowBack, contentDescription = "Back")
+                    IconButton(onClick = onOpenAdminMenu) {
+                        Icon(Icons.Filled.Settings, contentDescription = "Admin menu")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -182,20 +198,6 @@ fun CheckInScreen(
                         }
                     } else {
                         OutcomeCard(current)
-                    }
-                }
-
-                if (outcome != null) {
-                    Button(
-                        onClick = {
-                            hasTriggered = false
-                            viewModel.clearOutcome()
-                        },
-                        modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
-                    ) {
-                        Icon(Icons.Filled.Replay, contentDescription = null)
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text("Try Again")
                     }
                 }
             }

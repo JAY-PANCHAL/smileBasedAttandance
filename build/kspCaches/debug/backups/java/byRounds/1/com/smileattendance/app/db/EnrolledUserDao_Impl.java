@@ -1,7 +1,6 @@
 package com.smileattendance.app.db;
 
 import android.database.Cursor;
-import android.os.CancellationSignal;
 import androidx.annotation.NonNull;
 import androidx.room.CoroutinesRoom;
 import androidx.room.EntityInsertionAdapter;
@@ -107,52 +106,6 @@ public final class EnrolledUserDao_Impl implements EnrolledUserDao {
           }
         } finally {
           __preparedStmtOfDelete.release(_stmt);
-        }
-      }
-    }, $completion);
-  }
-
-  @Override
-  public Object getAll(final Continuation<? super List<EnrolledUser>> $completion) {
-    final String _sql = "SELECT * FROM enrolled_users";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
-    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<EnrolledUser>>() {
-      @Override
-      @NonNull
-      public List<EnrolledUser> call() throws Exception {
-        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
-        try {
-          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-          final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
-          final int _cursorIndexOfUniqueNumber = CursorUtil.getColumnIndexOrThrow(_cursor, "uniqueNumber");
-          final int _cursorIndexOfEmbedding = CursorUtil.getColumnIndexOrThrow(_cursor, "embedding");
-          final int _cursorIndexOfEnrolledAtMillis = CursorUtil.getColumnIndexOrThrow(_cursor, "enrolledAtMillis");
-          final int _cursorIndexOfReferencePhotoPath = CursorUtil.getColumnIndexOrThrow(_cursor, "referencePhotoPath");
-          final List<EnrolledUser> _result = new ArrayList<EnrolledUser>(_cursor.getCount());
-          while (_cursor.moveToNext()) {
-            final EnrolledUser _item;
-            final long _tmpId;
-            _tmpId = _cursor.getLong(_cursorIndexOfId);
-            final String _tmpName;
-            _tmpName = _cursor.getString(_cursorIndexOfName);
-            final String _tmpUniqueNumber;
-            _tmpUniqueNumber = _cursor.getString(_cursorIndexOfUniqueNumber);
-            final float[] _tmpEmbedding;
-            final byte[] _tmp;
-            _tmp = _cursor.getBlob(_cursorIndexOfEmbedding);
-            _tmpEmbedding = __embeddingConverter.toFloatArray(_tmp);
-            final long _tmpEnrolledAtMillis;
-            _tmpEnrolledAtMillis = _cursor.getLong(_cursorIndexOfEnrolledAtMillis);
-            final String _tmpReferencePhotoPath;
-            _tmpReferencePhotoPath = _cursor.getString(_cursorIndexOfReferencePhotoPath);
-            _item = new EnrolledUser(_tmpId,_tmpName,_tmpUniqueNumber,_tmpEmbedding,_tmpEnrolledAtMillis,_tmpReferencePhotoPath);
-            _result.add(_item);
-          }
-          return _result;
-        } finally {
-          _cursor.close();
-          _statement.release();
         }
       }
     }, $completion);

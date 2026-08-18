@@ -1,7 +1,9 @@
 package com.smileattendance.app
 
 import android.Manifest
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -48,6 +50,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
+        setupKioskDisplay()
         setContent {
             SmileAttendanceTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
@@ -76,6 +79,21 @@ class MainActivity : ComponentActivity() {
 
     private fun hasAllPermissions(): Boolean = requiredPermissions.all {
         ContextCompat.checkSelfPermission(this, it) == android.content.pm.PackageManager.PERMISSION_GRANTED
+    }
+
+    /** This device sits mounted at a gate running the check-in screen unattended — the display must never sleep or lock. */
+    private fun setupKioskDisplay() {
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+            setShowWhenLocked(true)
+            setTurnScreenOn(true)
+        } else {
+            @Suppress("DEPRECATION")
+            window.addFlags(
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED or
+                    WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+            )
+        }
     }
 }
 

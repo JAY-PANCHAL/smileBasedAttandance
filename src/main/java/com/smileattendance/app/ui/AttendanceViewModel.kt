@@ -2,6 +2,7 @@ package com.smileattendance.app.ui
 
 import android.app.Application
 import android.graphics.Bitmap
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -44,12 +45,15 @@ class AttendanceViewModel(application: Application) : AndroidViewModel(applicati
             try {
                 val user = repository.enroll(name, uniqueNumber, faceBitmap)
                 onDone(user)
+            } catch (e: Exception) {
+                Log.e(TAG, "enroll failed", e)
             } finally {
                 _busy.value = false
             }
         }
     }
 
+    /** Runs on every smiling frame from an unattended kiosk camera — must never crash the process. */
     fun checkIn(faceBitmap: Bitmap, smileProbability: Float) {
         if (_busy.value) return
         _busy.value = true
@@ -57,6 +61,8 @@ class AttendanceViewModel(application: Application) : AndroidViewModel(applicati
             try {
                 val outcome = repository.checkIn(faceBitmap, smileProbability)
                 _lastOutcome.value = outcome
+            } catch (e: Exception) {
+                Log.e(TAG, "checkIn failed — will retry on next frame", e)
             } finally {
                 _busy.value = false
             }
@@ -74,6 +80,8 @@ class AttendanceViewModel(application: Application) : AndroidViewModel(applicati
         viewModelScope.launch {
             try {
                 _livePreviewMatch.value = repository.recognize(faceBitmap)
+            } catch (e: Exception) {
+                Log.e(TAG, "previewRecognize failed", e)
             } finally {
                 previewInFlight = false
             }
@@ -94,5 +102,9 @@ class AttendanceViewModel(application: Application) : AndroidViewModel(applicati
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
             return AttendanceViewModel(application) as T
         }
+    }
+
+    companion object {
+        private const val TAG = "AttendanceViewModel"
     }
 }

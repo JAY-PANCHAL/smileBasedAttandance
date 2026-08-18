@@ -2,6 +2,7 @@ package com.smileattendance.app.ml
 
 import android.graphics.Bitmap
 import android.graphics.Rect
+import android.util.Log
 import androidx.camera.core.ExperimentalGetImage
 import androidx.camera.core.ImageProxy
 import com.google.mlkit.vision.common.InputImage
@@ -40,26 +41,36 @@ class SmileFaceAnalyzer(
             imageProxy.close()
             return
         }
-        val rotationDegrees = imageProxy.imageInfo.rotationDegrees
-        val inputImage = InputImage.fromMediaImage(mediaImage, rotationDegrees)
 
-        detector.process(inputImage)
-            .addOnSuccessListener { faces ->
-                val largest = faces.maxByOrNull { it.boundingBox.width() * it.boundingBox.height() }
-                if (largest == null || largest.smilingProbability == null) {
-                    onResult(null)
-                } else {
-                    val fullBitmap = imageProxy.toBitmap().rotated(rotationDegrees.toFloat())
-                    val crop = cropToFace(fullBitmap, largest.boundingBox, fullBitmap.width, fullBitmap.height)
-                    if (crop != null) {
-                        onResult(FaceAnalysisResult(largest, largest.smilingProbability!!, crop))
-                    } else {
+        try {
+            val rotationDegrees = imageProxy.imageInfo.rotationDegrees
+            val inputImage = InputImage.fromMediaImage(mediaImage, rotationDegrees)
+
+            detector.process(inputImage)
+                .addOnSuccessListener { faces ->
+                    // This runs on a bad-frame kiosk camera for hours unattended — one malformed
+                    // frame (odd YUV stride, corrupt buffer) must not take the whole app down.
+                    try {
+                        val largest = faces.maxByOrNull { it.boundingBox.width() * it.boundingBox.height() }
+                        if (largest == null || largest.smilingProbability == null) {
+                            onResult(null)
+                        } else {
+                            val fullBitmap = imageProxy.toBitmap().rotated(rotationDegrees.toFloat())
+                            val crop = cropToFace(fullBitmap, largest.boundingBox, fullBitmap.width, fullBitmap.height)
+                            onResult(crop?.let { FaceAnalysisResult(largest, largest.smilingProbability!!, it) })
+                        }
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Frame post-processing failed, skipping frame", e)
                         onResult(null)
                     }
                 }
-            }
-            .addOnFailureListener { onResult(null) }
-            .addOnCompleteListener { imageProxy.close() }
+                .addOnFailureListener { onResult(null) }
+                .addOnCompleteListener { imageProxy.close() }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to submit frame for detection, skipping frame", e)
+            onResult(null)
+            imageProxy.close()
+        }
     }
 
     private fun cropToFace(bitmap: Bitmap, box: Rect, imgWidth: Int, imgHeight: Int): Bitmap? {
@@ -76,6 +87,8 @@ class SmileFaceAnalyzer(
     fun close() = detector.close()
 
     companion object {
+        private const val TAG = "SmileFaceAnalyzer"
+
         /** How confident ML Kit must be that the person is smiling before we treat it as a valid trigger. */
         const val SMILE_THRESHOLD = 0.75f
     }
