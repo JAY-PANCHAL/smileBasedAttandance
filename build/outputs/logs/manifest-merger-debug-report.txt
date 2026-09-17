@@ -1,116 +1,118 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:28:9-36:20
+INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:31:9-39:20
 	android:grantUriPermissions
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:32:13-47
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:35:13-47
 	android:authorities
 		INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:30:13-64
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:33:13-64
 	android:exported
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:29:13-62
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:32:13-62
 manifest
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-39:12
-MERGED from [androidx.camera:camera-video:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/2ccae105c313579f2fd9647ad97e9cc5/transformed/camera-video-1.3.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-view:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/8f699151038398abc67287b728921714/transformed/camera-view-1.3.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-lifecycle:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/2eb568d1fee9aa49551846a6d8474a54/transformed/camera-lifecycle-1.3.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:17:1-36:12
-MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d6d206912c7d1cef6962c6830da61fd/transformed/camera-core-1.3.4/AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.mlkit:face-detection:16.1.7] /Users/mindtechm2/.gradle/caches/transforms-4/29b675e4a2ec9cce287df4de739a2e25/transformed/face-detection-16.1.7/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:2:1-26:12
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/05b0abb62567e71cad12d30fd2ff79b5/transformed/vision-interfaces-16.1.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/731b551879e572ebdcbe1400eb986e72/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/fe0bfa0d5983e4510a88f46c7299367f/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/ab1f5857df2cdd9ec92205362f09a229/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/938d43e392aa6764573d52ba27c67c88/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/396187c6e8dab929bdae0d3253e40bb5/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/435811e7db64baa3c33787b801c6b4fd/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3a5715264b485215bb59e36a62481534/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/7db74a47f9308865057bad070e9589a5/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.3.6] /Users/mindtechm2/.gradle/caches/transforms-4/4a03b4a432344b0b77add7de140f082c/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/ecafde4f717211b5393d3a6669bbd635/transformed/activity-1.9.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/2c208efc4445777580d092dc8c0ff577/transformed/activity-ktx-1.9.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/a0abdf354e700bcaac1126606a1fdc0d/transformed/material3-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.material:material-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/714924bbc3c03606e1bf49ae068796a3/transformed/material-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/3a7553b7533acd55d62ab60694bd8e03/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/81b9fca98bc9d93c219a5664ec56a2b5/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/f3c3e4c165974ba5c9f6b99779b1bf80/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/243f528b9b2308be770cafd9f2a3310f/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/639d362069d3e1ad8dcba21c83e7453d/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-core-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/0aa94228117f12d43e87b05a3cd75ebe/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/cdc4495f5fadcbc06e80e604a5986116/transformed/animation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/ab486caecc00cf66e176994606455fe4/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/71403411fa14cee0ccf56b67f14490f3/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/d6abce7d29e50cc8636367a9120f8550/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-util-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/c11c232f28d1ce3243aafc1306eb7083/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-text-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6a412828cda80e5ee353751e77a7c09b/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6d5e28f5575c3d11687ada3aa6a00f6c/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/ac5fe6c2ae98769af38974bea2f77521/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.activity:activity-compose:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/94e8a3606e09ec691d3175f02c9fa5cd/transformed/activity-compose-1.9.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/df611a8ed2b84b506b38bd533dd2dce0/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/dbb43fb97c16af1738c69f9585f17725/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/0027f2dbca11dcf5d48f319bd24c0172/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:2:1-5:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/34d0730ddb12496879242705d984df12/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b539bd468d759140d06f22c90dfbee3e/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/321fb826f70b53b1ef4001d4ccc6a4f2/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/5679e22aad5f3ef3b1890e7aa9fc4ab9/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/f0e8eaf470acca0415ef31a789577478/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/3572c98c80bf007c358aabbea4d63ad6/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/fb1a9fec1323591d9ca1b5ae8d522f75/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/bc41c6988590d83eb80257f3121f723a/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/fefb365811d30cd95537de334af25df0/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/083a0127a69d614536f4c4e01e762d1e/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/739e5bc0c07cb158223a5d5686d375b6/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/ec19593f04bba33b8d78516c8b16df0d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/7a7c935af36228e4d0507fa5e15344b6/transformed/ui-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.autofill:autofill:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/74c0dbec5820d6e072a07f659d887010/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/95835669ebff7e02d1dccbde50f54cc7/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/e4c3f50af773de15607e92be81abde94/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/6056286e4455666ac332596056c7f676/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/89a9b0286d37c47a219d88690e83f4cf/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/fbd3f9d43a4cc276be3484b883d71d7e/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/dd42e38183cb7d9a90b69ba4cfad41b5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.core:core-ktx:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d33bee1637304cf060ddfc55a5600f8f/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/e89bcace8496eda3cb6161a65fdf3d05/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.room:room-ktx:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/4846b42d71b9682bc33dd8f717247987/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/5373f9c4ad0a3edc85bee31e8d8d77dc/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.runtime:runtime-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/7cb4d70bc8dce8c244de576ac198624d/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/cd4a2786e58cc42f09da01120e8ec02c/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/a2c1f44d85a58bea855e8e881fed3c91/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/efdcc402ed8e7fa891c97037c96eceec/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mindtechm2/.gradle/caches/transforms-4/39c30d935da0fcd662c35a0ee9e498ab/transformed/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/f3a182e40f2f55da8e0fa9d0229e74a8/transformed/transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
-MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/c422e2dd51b06c0e7b9be007d34c5ca9/transformed/firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/5160044ddbdf72edc758ea39a87461ac/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/3b4cbc485de508abdcc6b67de782fc42/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/d1a8b21dc3a64323cc9bd8d7a9c1031b/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/259b4b155bd65ae43561961fd4e59cfb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/d4dd02a3897b1441880b8fdd2da8ae00/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/f2e9c73a68070fd6ad1518ac571d0953/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/d521c3646509345a3184600f81d453b4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/fede3db31939057dfe71640223f23591/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:2:1-5:12
-MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/71b7b263189d1d763abb1972f476863e/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:2:1-11:12
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/590be6624d054a003ef4a5058a963a12/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:2:1-11:12
-MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/b480c3eb91eaf5103cb68927025169f2/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:2:1-5:12
-MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/716f98489f5222818a4ff8e99da84081/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/5dfcd357342589696f962afd7800ac2d/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:2:1-42:12
+MERGED from [androidx.camera:camera-video:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/4d7de092f48cdedacfc9a1a1f70650f2/transformed/camera-video-1.3.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-view:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/9b7eb4d8aab7c0cc4dd7644170cf1d60/transformed/camera-view-1.3.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-lifecycle:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/5af3ea426e3a3afd6ff534ff82c6714e/transformed/camera-lifecycle-1.3.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/bac2a064b7aa1b739b7a6a06b84f4728/transformed/camera-core-1.3.4/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.mlkit:face-detection:16.1.7] /Users/mindtechm2/.gradle/caches/transforms-4/eee57bf0f4a11c59d2722339674acf1f/transformed/face-detection-16.1.7/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/585b9138c6cfc7258716bb4d5bba8789/transformed/vision-interfaces-16.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/bd9ad6c9b9b4deeba29ddea0f7b12d90/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/6890592c507ba7052f533e72b1b10772/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/bd47e71921c7aa445235422a73ea412d/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/be08cddf1990583b5accd52a9d1f2f6b/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/90ca335e5e91965a62c052b6de39be76/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/f6af8ec3ca9bff6197a1ddb3ad772c41/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/92773a37437ef90336e64c7d58f4c8f9/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/2d3f491cd9eea193abfec17a258f5cfc/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/mindtechm2/.gradle/caches/transforms-4/f159a2e0fe1dd03f1a9884cf4a3d8229/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/7c97a28b2b4d117175e8b6d063db4d0d/transformed/activity-1.9.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/39f9cd07f24ed08dd663b1231d66db0f/transformed/activity-ktx-1.9.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/13b04cb355c9664709c19e2c0f20f9a3/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/32a0b5d6c0c2b1ee22c93614eebc3763/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/aea95d7f5b28c871986afc64fe496f86/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/e95566c03abc9cb08b327c273c9d2576/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f056e13064be95a8ff1d81c7590a3ef8/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/72e2ab73ebf3482f03c58c73a88c1698/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/516f972047b085c598ac25ad8cb5b6a0/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/c40eb33513b6879c2bd48da20cdab5f6/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/428b769f23dced8d4c29d78613f8a831/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/216edfc55eb850207f10e277b06a0192/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/3b18ff56d3051429abeeb812fead96ac/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/108abdfe1ea7138e6e77d092a671c715/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/4b35ad54807fb04c7afb2f6ce998efea/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/216437746ec82f4af5bddd05b846616d/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/11fee6d7479beecdab548e60d4cf3202/transformed/activity-compose-1.9.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/0197cbded08ea5144cb06c12a22cc340/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/587e04d6989880dab8316550a4216d39/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b26f8bf3d0800ba288e0be2ec8ddfdf1/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/3dfa85d67f0bfe4cebaba6b51ebb1307/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b42af92c0c038f64d4de782077aea3ff/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/c833d6c62f48fd7a4420f264305fef6d/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/e8c34599ad3090e56ac349f478a7503e/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/07feeaf8e10d4191454c9a7f406bdfc8/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b1ae27b0d7192c06db6c7f69ad53eeac/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/d211fe4e92bb041f837f23f1b0c2b448/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/8578a6933ae68c17ab777dc2d37c8006/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/dbb1df54a43ee891e2d75b4a5ad5a520/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/4a2688032a4f373e8add20edcb941d7d/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/868242362e3586c00e6048d7d924a557/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/905302043979e644aa21940df2c24561/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/581ee6876f138cd59d0ff0d91faf2c06/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/76071a3560adb214aa1a191816a84b23/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/849b7348140b6c30e56166a030304dbc/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/89c8254399db9c874f5c91ea28a84947/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/ae049eafdf2124a43b99d77639d1c1d7/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/0ea51e55fc540b80b3d0646db34df98b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/2a07fb4342b2da6941308ce9166a27ef/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/7f537d3c72ba0b46b8bdd98c7678cade/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/b7b878d93b14cf1c2234c4d92cd78bff/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/342f154b93f2de51ea545f9b7e91c4e1/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/fbee37c0587655b4e4264b27cffe3cdb/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/ed7722e9f615cdc263339903094f205b/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/27b9085871cb4576ed8a3e49487a2f29/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/7257813c96c66c578c2f83924945c997/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/59e5d5876fbe42ab30b5ee273019835a/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/8ddf35ba09771cd4b7b553ac6ecf4675/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/dcd124e75ccd3aadbcab2099d554620d/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/32a05a031149961cff94b05df853ea81/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/mindtechm2/.gradle/caches/transforms-4/074beff0ed842a763b58e0b66812efe8/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/mindtechm2/.gradle/caches/transforms-4/9e5eb058e2eb7ace963bd09c9436d5fb/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/186e61e50e50d176cdfac2756c9e93ec/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mindtechm2/.gradle/caches/transforms-4/c075022c220aa23333258f189cdcbcae/transformed/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/53e66ac7f31e4055a9f2280e72ad538c/transformed/transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/fd8b32ed678547bb63968f606846e76c/transformed/firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/debb78905f6bcba882400576953bc358/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/848f1db2d6e692a46ea2298b9be7cd35/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/2cf1784a364ac0e0411cbe840bcbc52a/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/181c92940f4bc8c0f871f0f6bd1b63fc/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/8996f1a47171e2a6903779741781d58e/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/470647fa0f463b6ed3f956cc7fd8afb2/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/0a9328737b101f658e9884041b0ba82b/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/00568d59a43acb254f195ba1dda4ead2/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/73f0511df03379a39bc1ffaff6a54b78/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d7e45a6c6ca38b08db8551660b4aac8/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/63d0f0a20245a57f49643c6e542a3460/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/cd0e72668493bcd0a76b28b45745d83b/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 	package
 		INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -123,532 +125,542 @@ uses-permission#android.permission.CAMERA
 ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:4:5-65
 	android:name
 		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:4:22-62
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:22-76
 uses-feature#android.hardware.camera
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:5-84
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:8:5-84
 	android:required
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:58-81
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:8:58-81
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:6:19-57
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:8:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:7:5-95
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:9:5-95
 	android:required
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:7:68-92
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:9:68-92
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:7:19-67
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:9:19-67
 application
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:9:5-37:19
-INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:9:5-37:19
-MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d6d206912c7d1cef6962c6830da61fd/transformed/camera-core-1.3.4/AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d6d206912c7d1cef6962c6830da61fd/transformed/camera-core-1.3.4/AndroidManifest.xml:23:5-34:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
-MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/731b551879e572ebdcbe1400eb986e72/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/731b551879e572ebdcbe1400eb986e72/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
-MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/259b4b155bd65ae43561961fd4e59cfb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/259b4b155bd65ae43561961fd4e59cfb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/d4dd02a3897b1441880b8fdd2da8ae00/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/d4dd02a3897b1441880b8fdd2da8ae00/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/71b7b263189d1d763abb1972f476863e/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
-MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/71b7b263189d1d763abb1972f476863e/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/590be6624d054a003ef4a5058a963a12/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/590be6624d054a003ef4a5058a963a12/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
-MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/716f98489f5222818a4ff8e99da84081/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
-MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/716f98489f5222818a4ff8e99da84081/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/5dfcd357342589696f962afd7800ac2d/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/5dfcd357342589696f962afd7800ac2d/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:11:5-40:19
+INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:11:5-40:19
+MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/bac2a064b7aa1b739b7a6a06b84f4728/transformed/camera-core-1.3.4/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/bac2a064b7aa1b739b7a6a06b84f4728/transformed/camera-core-1.3.4/AndroidManifest.xml:23:5-34:19
+MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/bd9ad6c9b9b4deeba29ddea0f7b12d90/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/bd9ad6c9b9b4deeba29ddea0f7b12d90/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/186e61e50e50d176cdfac2756c9e93ec/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/186e61e50e50d176cdfac2756c9e93ec/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/181c92940f4bc8c0f871f0f6bd1b63fc/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/181c92940f4bc8c0f871f0f6bd1b63fc/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/00568d59a43acb254f195ba1dda4ead2/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/00568d59a43acb254f195ba1dda4ead2/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/73f0511df03379a39bc1ffaff6a54b78/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/73f0511df03379a39bc1ffaff6a54b78/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/63d0f0a20245a57f49643c6e542a3460/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/63d0f0a20245a57f49643c6e542a3460/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/cd0e72668493bcd0a76b28b45745d83b/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/cd0e72668493bcd0a76b28b45745d83b/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
 		INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:15:9-53
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:18:9-53
+	android:usesCleartextTraffic
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:17:9-44
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:12:9-43
 activity#com.smileattendance.app.MainActivity
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:17:9-26:20
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:20:9-29:20
 	android:screenOrientation
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:20:13-49
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:23:13-56
 	android:exported
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:19:13-36
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:22:13-36
 	android:theme
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:21:13-64
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:24:13-64
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:18:13-41
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:21:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:22:13-25:29
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:25:13-28:29
 action#android.intent.action.MAIN
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:27:27-74
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:33:13-35:54
+ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:36:13-38:54
 	android:resource
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:35:17-51
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:38:17-51
 	android:name
-		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:34:17-67
+		ADDED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml:37:17-67
 uses-sdk
 INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml
 INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml
-MERGED from [androidx.camera:camera-video:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/2ccae105c313579f2fd9647ad97e9cc5/transformed/camera-video-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-video:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/2ccae105c313579f2fd9647ad97e9cc5/transformed/camera-video-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-view:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/8f699151038398abc67287b728921714/transformed/camera-view-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-view:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/8f699151038398abc67287b728921714/transformed/camera-view-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-lifecycle:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/2eb568d1fee9aa49551846a6d8474a54/transformed/camera-lifecycle-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-lifecycle:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/2eb568d1fee9aa49551846a6d8474a54/transformed/camera-lifecycle-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d6d206912c7d1cef6962c6830da61fd/transformed/camera-core-1.3.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d6d206912c7d1cef6962c6830da61fd/transformed/camera-core-1.3.4/AndroidManifest.xml:21:5-44
-MERGED from [com.google.mlkit:face-detection:16.1.7] /Users/mindtechm2/.gradle/caches/transforms-4/29b675e4a2ec9cce287df4de739a2e25/transformed/face-detection-16.1.7/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:face-detection:16.1.7] /Users/mindtechm2/.gradle/caches/transforms-4/29b675e4a2ec9cce287df4de739a2e25/transformed/face-detection-16.1.7/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/05b0abb62567e71cad12d30fd2ff79b5/transformed/vision-interfaces-16.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/05b0abb62567e71cad12d30fd2ff79b5/transformed/vision-interfaces-16.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/731b551879e572ebdcbe1400eb986e72/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/731b551879e572ebdcbe1400eb986e72/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
-MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/fe0bfa0d5983e4510a88f46c7299367f/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/fe0bfa0d5983e4510a88f46c7299367f/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/ab1f5857df2cdd9ec92205362f09a229/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/ab1f5857df2cdd9ec92205362f09a229/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/938d43e392aa6764573d52ba27c67c88/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/938d43e392aa6764573d52ba27c67c88/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/396187c6e8dab929bdae0d3253e40bb5/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/396187c6e8dab929bdae0d3253e40bb5/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/435811e7db64baa3c33787b801c6b4fd/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/435811e7db64baa3c33787b801c6b4fd/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3a5715264b485215bb59e36a62481534/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3a5715264b485215bb59e36a62481534/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/7db74a47f9308865057bad070e9589a5/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/7db74a47f9308865057bad070e9589a5/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.3.6] /Users/mindtechm2/.gradle/caches/transforms-4/4a03b4a432344b0b77add7de140f082c/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] /Users/mindtechm2/.gradle/caches/transforms-4/4a03b4a432344b0b77add7de140f082c/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/ecafde4f717211b5393d3a6669bbd635/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/ecafde4f717211b5393d3a6669bbd635/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/2c208efc4445777580d092dc8c0ff577/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/2c208efc4445777580d092dc8c0ff577/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/a0abdf354e700bcaac1126606a1fdc0d/transformed/material3-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/a0abdf354e700bcaac1126606a1fdc0d/transformed/material3-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material:material-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/714924bbc3c03606e1bf49ae068796a3/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/714924bbc3c03606e1bf49ae068796a3/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/3a7553b7533acd55d62ab60694bd8e03/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/3a7553b7533acd55d62ab60694bd8e03/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/81b9fca98bc9d93c219a5664ec56a2b5/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/81b9fca98bc9d93c219a5664ec56a2b5/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/f3c3e4c165974ba5c9f6b99779b1bf80/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/f3c3e4c165974ba5c9f6b99779b1bf80/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/243f528b9b2308be770cafd9f2a3310f/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/243f528b9b2308be770cafd9f2a3310f/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/639d362069d3e1ad8dcba21c83e7453d/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/639d362069d3e1ad8dcba21c83e7453d/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/0aa94228117f12d43e87b05a3cd75ebe/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/0aa94228117f12d43e87b05a3cd75ebe/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/cdc4495f5fadcbc06e80e604a5986116/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/cdc4495f5fadcbc06e80e604a5986116/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/ab486caecc00cf66e176994606455fe4/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/ab486caecc00cf66e176994606455fe4/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/71403411fa14cee0ccf56b67f14490f3/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/71403411fa14cee0ccf56b67f14490f3/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/d6abce7d29e50cc8636367a9120f8550/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/d6abce7d29e50cc8636367a9120f8550/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/c11c232f28d1ce3243aafc1306eb7083/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/c11c232f28d1ce3243aafc1306eb7083/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6a412828cda80e5ee353751e77a7c09b/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6a412828cda80e5ee353751e77a7c09b/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6d5e28f5575c3d11687ada3aa6a00f6c/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6d5e28f5575c3d11687ada3aa6a00f6c/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/ac5fe6c2ae98769af38974bea2f77521/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/ac5fe6c2ae98769af38974bea2f77521/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity-compose:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/94e8a3606e09ec691d3175f02c9fa5cd/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-compose:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/94e8a3606e09ec691d3175f02c9fa5cd/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/df611a8ed2b84b506b38bd533dd2dce0/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/df611a8ed2b84b506b38bd533dd2dce0/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/dbb43fb97c16af1738c69f9585f17725/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/dbb43fb97c16af1738c69f9585f17725/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/0027f2dbca11dcf5d48f319bd24c0172/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/0027f2dbca11dcf5d48f319bd24c0172/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/34d0730ddb12496879242705d984df12/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/34d0730ddb12496879242705d984df12/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b539bd468d759140d06f22c90dfbee3e/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b539bd468d759140d06f22c90dfbee3e/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/321fb826f70b53b1ef4001d4ccc6a4f2/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/321fb826f70b53b1ef4001d4ccc6a4f2/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/5679e22aad5f3ef3b1890e7aa9fc4ab9/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/5679e22aad5f3ef3b1890e7aa9fc4ab9/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/f0e8eaf470acca0415ef31a789577478/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/f0e8eaf470acca0415ef31a789577478/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/3572c98c80bf007c358aabbea4d63ad6/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/3572c98c80bf007c358aabbea4d63ad6/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/fb1a9fec1323591d9ca1b5ae8d522f75/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/fb1a9fec1323591d9ca1b5ae8d522f75/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/bc41c6988590d83eb80257f3121f723a/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/bc41c6988590d83eb80257f3121f723a/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/fefb365811d30cd95537de334af25df0/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/fefb365811d30cd95537de334af25df0/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/083a0127a69d614536f4c4e01e762d1e/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/083a0127a69d614536f4c4e01e762d1e/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/739e5bc0c07cb158223a5d5686d375b6/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/739e5bc0c07cb158223a5d5686d375b6/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/ec19593f04bba33b8d78516c8b16df0d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/ec19593f04bba33b8d78516c8b16df0d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/7a7c935af36228e4d0507fa5e15344b6/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/7a7c935af36228e4d0507fa5e15344b6/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.autofill:autofill:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/74c0dbec5820d6e072a07f659d887010/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.autofill:autofill:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/74c0dbec5820d6e072a07f659d887010/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/95835669ebff7e02d1dccbde50f54cc7/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/95835669ebff7e02d1dccbde50f54cc7/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/e4c3f50af773de15607e92be81abde94/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/e4c3f50af773de15607e92be81abde94/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/6056286e4455666ac332596056c7f676/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/6056286e4455666ac332596056c7f676/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/89a9b0286d37c47a219d88690e83f4cf/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/89a9b0286d37c47a219d88690e83f4cf/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/fbd3f9d43a4cc276be3484b883d71d7e/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/fbd3f9d43a4cc276be3484b883d71d7e/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/dd42e38183cb7d9a90b69ba4cfad41b5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/dd42e38183cb7d9a90b69ba4cfad41b5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.core:core-ktx:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d33bee1637304cf060ddfc55a5600f8f/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d33bee1637304cf060ddfc55a5600f8f/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/e89bcace8496eda3cb6161a65fdf3d05/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/e89bcace8496eda3cb6161a65fdf3d05/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/4846b42d71b9682bc33dd8f717247987/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/4846b42d71b9682bc33dd8f717247987/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/5373f9c4ad0a3edc85bee31e8d8d77dc/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/5373f9c4ad0a3edc85bee31e8d8d77dc/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/7cb4d70bc8dce8c244de576ac198624d/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/7cb4d70bc8dce8c244de576ac198624d/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/cd4a2786e58cc42f09da01120e8ec02c/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/cd4a2786e58cc42f09da01120e8ec02c/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/a2c1f44d85a58bea855e8e881fed3c91/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/a2c1f44d85a58bea855e8e881fed3c91/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/efdcc402ed8e7fa891c97037c96eceec/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/efdcc402ed8e7fa891c97037c96eceec/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mindtechm2/.gradle/caches/transforms-4/39c30d935da0fcd662c35a0ee9e498ab/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mindtechm2/.gradle/caches/transforms-4/39c30d935da0fcd662c35a0ee9e498ab/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/f3a182e40f2f55da8e0fa9d0229e74a8/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/f3a182e40f2f55da8e0fa9d0229e74a8/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/c422e2dd51b06c0e7b9be007d34c5ca9/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/c422e2dd51b06c0e7b9be007d34c5ca9/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/5160044ddbdf72edc758ea39a87461ac/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/5160044ddbdf72edc758ea39a87461ac/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/3b4cbc485de508abdcc6b67de782fc42/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/3b4cbc485de508abdcc6b67de782fc42/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/d1a8b21dc3a64323cc9bd8d7a9c1031b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/d1a8b21dc3a64323cc9bd8d7a9c1031b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/259b4b155bd65ae43561961fd4e59cfb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/259b4b155bd65ae43561961fd4e59cfb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/d4dd02a3897b1441880b8fdd2da8ae00/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/d4dd02a3897b1441880b8fdd2da8ae00/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/f2e9c73a68070fd6ad1518ac571d0953/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/f2e9c73a68070fd6ad1518ac571d0953/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/d521c3646509345a3184600f81d453b4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/d521c3646509345a3184600f81d453b4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/fede3db31939057dfe71640223f23591/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/fede3db31939057dfe71640223f23591/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/71b7b263189d1d763abb1972f476863e/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
-MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/71b7b263189d1d763abb1972f476863e/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/590be6624d054a003ef4a5058a963a12/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/590be6624d054a003ef4a5058a963a12/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
-MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/b480c3eb91eaf5103cb68927025169f2/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/b480c3eb91eaf5103cb68927025169f2/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/716f98489f5222818a4ff8e99da84081/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
-MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/716f98489f5222818a4ff8e99da84081/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/5dfcd357342589696f962afd7800ac2d/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/5dfcd357342589696f962afd7800ac2d/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/4d7de092f48cdedacfc9a1a1f70650f2/transformed/camera-video-1.3.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/4d7de092f48cdedacfc9a1a1f70650f2/transformed/camera-video-1.3.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/9b7eb4d8aab7c0cc4dd7644170cf1d60/transformed/camera-view-1.3.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/9b7eb4d8aab7c0cc4dd7644170cf1d60/transformed/camera-view-1.3.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/5af3ea426e3a3afd6ff534ff82c6714e/transformed/camera-lifecycle-1.3.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/5af3ea426e3a3afd6ff534ff82c6714e/transformed/camera-lifecycle-1.3.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/bac2a064b7aa1b739b7a6a06b84f4728/transformed/camera-core-1.3.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/bac2a064b7aa1b739b7a6a06b84f4728/transformed/camera-core-1.3.4/AndroidManifest.xml:21:5-44
+MERGED from [com.google.mlkit:face-detection:16.1.7] /Users/mindtechm2/.gradle/caches/transforms-4/eee57bf0f4a11c59d2722339674acf1f/transformed/face-detection-16.1.7/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:face-detection:16.1.7] /Users/mindtechm2/.gradle/caches/transforms-4/eee57bf0f4a11c59d2722339674acf1f/transformed/face-detection-16.1.7/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/585b9138c6cfc7258716bb4d5bba8789/transformed/vision-interfaces-16.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/585b9138c6cfc7258716bb4d5bba8789/transformed/vision-interfaces-16.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/bd9ad6c9b9b4deeba29ddea0f7b12d90/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/bd9ad6c9b9b4deeba29ddea0f7b12d90/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/6890592c507ba7052f533e72b1b10772/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/6890592c507ba7052f533e72b1b10772/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/bd47e71921c7aa445235422a73ea412d/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/bd47e71921c7aa445235422a73ea412d/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/be08cddf1990583b5accd52a9d1f2f6b/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/be08cddf1990583b5accd52a9d1f2f6b/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/90ca335e5e91965a62c052b6de39be76/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/90ca335e5e91965a62c052b6de39be76/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/f6af8ec3ca9bff6197a1ddb3ad772c41/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/mindtechm2/.gradle/caches/transforms-4/f6af8ec3ca9bff6197a1ddb3ad772c41/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/92773a37437ef90336e64c7d58f4c8f9/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/92773a37437ef90336e64c7d58f4c8f9/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/2d3f491cd9eea193abfec17a258f5cfc/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/2d3f491cd9eea193abfec17a258f5cfc/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/mindtechm2/.gradle/caches/transforms-4/f159a2e0fe1dd03f1a9884cf4a3d8229/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/mindtechm2/.gradle/caches/transforms-4/f159a2e0fe1dd03f1a9884cf4a3d8229/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/7c97a28b2b4d117175e8b6d063db4d0d/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/7c97a28b2b4d117175e8b6d063db4d0d/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/39f9cd07f24ed08dd663b1231d66db0f/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/39f9cd07f24ed08dd663b1231d66db0f/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/13b04cb355c9664709c19e2c0f20f9a3/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/13b04cb355c9664709c19e2c0f20f9a3/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/32a0b5d6c0c2b1ee22c93614eebc3763/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/32a0b5d6c0c2b1ee22c93614eebc3763/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/aea95d7f5b28c871986afc64fe496f86/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/aea95d7f5b28c871986afc64fe496f86/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/e95566c03abc9cb08b327c273c9d2576/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/e95566c03abc9cb08b327c273c9d2576/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f056e13064be95a8ff1d81c7590a3ef8/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f056e13064be95a8ff1d81c7590a3ef8/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/72e2ab73ebf3482f03c58c73a88c1698/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/72e2ab73ebf3482f03c58c73a88c1698/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/516f972047b085c598ac25ad8cb5b6a0/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/516f972047b085c598ac25ad8cb5b6a0/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/c40eb33513b6879c2bd48da20cdab5f6/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/c40eb33513b6879c2bd48da20cdab5f6/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/428b769f23dced8d4c29d78613f8a831/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/428b769f23dced8d4c29d78613f8a831/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/216edfc55eb850207f10e277b06a0192/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/216edfc55eb850207f10e277b06a0192/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/3b18ff56d3051429abeeb812fead96ac/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/3b18ff56d3051429abeeb812fead96ac/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/108abdfe1ea7138e6e77d092a671c715/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/108abdfe1ea7138e6e77d092a671c715/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/4b35ad54807fb04c7afb2f6ce998efea/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/4b35ad54807fb04c7afb2f6ce998efea/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/216437746ec82f4af5bddd05b846616d/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/216437746ec82f4af5bddd05b846616d/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/11fee6d7479beecdab548e60d4cf3202/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/mindtechm2/.gradle/caches/transforms-4/11fee6d7479beecdab548e60d4cf3202/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/0197cbded08ea5144cb06c12a22cc340/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/0197cbded08ea5144cb06c12a22cc340/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/587e04d6989880dab8316550a4216d39/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/587e04d6989880dab8316550a4216d39/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b26f8bf3d0800ba288e0be2ec8ddfdf1/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b26f8bf3d0800ba288e0be2ec8ddfdf1/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/3dfa85d67f0bfe4cebaba6b51ebb1307/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/3dfa85d67f0bfe4cebaba6b51ebb1307/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b42af92c0c038f64d4de782077aea3ff/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b42af92c0c038f64d4de782077aea3ff/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/c833d6c62f48fd7a4420f264305fef6d/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/c833d6c62f48fd7a4420f264305fef6d/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/e8c34599ad3090e56ac349f478a7503e/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/e8c34599ad3090e56ac349f478a7503e/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/07feeaf8e10d4191454c9a7f406bdfc8/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/07feeaf8e10d4191454c9a7f406bdfc8/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b1ae27b0d7192c06db6c7f69ad53eeac/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/b1ae27b0d7192c06db6c7f69ad53eeac/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/d211fe4e92bb041f837f23f1b0c2b448/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/d211fe4e92bb041f837f23f1b0c2b448/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/8578a6933ae68c17ab777dc2d37c8006/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/8578a6933ae68c17ab777dc2d37c8006/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/dbb1df54a43ee891e2d75b4a5ad5a520/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/dbb1df54a43ee891e2d75b4a5ad5a520/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/4a2688032a4f373e8add20edcb941d7d/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/4a2688032a4f373e8add20edcb941d7d/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/868242362e3586c00e6048d7d924a557/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/868242362e3586c00e6048d7d924a557/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/905302043979e644aa21940df2c24561/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/905302043979e644aa21940df2c24561/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/581ee6876f138cd59d0ff0d91faf2c06/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/581ee6876f138cd59d0ff0d91faf2c06/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/76071a3560adb214aa1a191816a84b23/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/76071a3560adb214aa1a191816a84b23/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/849b7348140b6c30e56166a030304dbc/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/849b7348140b6c30e56166a030304dbc/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/89c8254399db9c874f5c91ea28a84947/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/89c8254399db9c874f5c91ea28a84947/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/ae049eafdf2124a43b99d77639d1c1d7/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/ae049eafdf2124a43b99d77639d1c1d7/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/0ea51e55fc540b80b3d0646db34df98b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/0ea51e55fc540b80b3d0646db34df98b/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/2a07fb4342b2da6941308ce9166a27ef/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/2a07fb4342b2da6941308ce9166a27ef/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/7f537d3c72ba0b46b8bdd98c7678cade/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/7f537d3c72ba0b46b8bdd98c7678cade/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/b7b878d93b14cf1c2234c4d92cd78bff/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/b7b878d93b14cf1c2234c4d92cd78bff/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/342f154b93f2de51ea545f9b7e91c4e1/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/342f154b93f2de51ea545f9b7e91c4e1/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/fbee37c0587655b4e4264b27cffe3cdb/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/fbee37c0587655b4e4264b27cffe3cdb/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/ed7722e9f615cdc263339903094f205b/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/ed7722e9f615cdc263339903094f205b/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/27b9085871cb4576ed8a3e49487a2f29/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/mindtechm2/.gradle/caches/transforms-4/27b9085871cb4576ed8a3e49487a2f29/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/7257813c96c66c578c2f83924945c997/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/7257813c96c66c578c2f83924945c997/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/59e5d5876fbe42ab30b5ee273019835a/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/59e5d5876fbe42ab30b5ee273019835a/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/8ddf35ba09771cd4b7b553ac6ecf4675/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/8ddf35ba09771cd4b7b553ac6ecf4675/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/dcd124e75ccd3aadbcab2099d554620d/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/dcd124e75ccd3aadbcab2099d554620d/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/32a05a031149961cff94b05df853ea81/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/32a05a031149961cff94b05df853ea81/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/mindtechm2/.gradle/caches/transforms-4/074beff0ed842a763b58e0b66812efe8/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/mindtechm2/.gradle/caches/transforms-4/074beff0ed842a763b58e0b66812efe8/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/mindtechm2/.gradle/caches/transforms-4/9e5eb058e2eb7ace963bd09c9436d5fb/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/mindtechm2/.gradle/caches/transforms-4/9e5eb058e2eb7ace963bd09c9436d5fb/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/186e61e50e50d176cdfac2756c9e93ec/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/186e61e50e50d176cdfac2756c9e93ec/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mindtechm2/.gradle/caches/transforms-4/c075022c220aa23333258f189cdcbcae/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/mindtechm2/.gradle/caches/transforms-4/c075022c220aa23333258f189cdcbcae/transformed/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/53e66ac7f31e4055a9f2280e72ad538c/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/mindtechm2/.gradle/caches/transforms-4/53e66ac7f31e4055a9f2280e72ad538c/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/fd8b32ed678547bb63968f606846e76c/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/fd8b32ed678547bb63968f606846e76c/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/debb78905f6bcba882400576953bc358/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/debb78905f6bcba882400576953bc358/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/848f1db2d6e692a46ea2298b9be7cd35/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/848f1db2d6e692a46ea2298b9be7cd35/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/2cf1784a364ac0e0411cbe840bcbc52a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/2cf1784a364ac0e0411cbe840bcbc52a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/181c92940f4bc8c0f871f0f6bd1b63fc/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/181c92940f4bc8c0f871f0f6bd1b63fc/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/8996f1a47171e2a6903779741781d58e/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/8996f1a47171e2a6903779741781d58e/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/470647fa0f463b6ed3f956cc7fd8afb2/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mindtechm2/.gradle/caches/transforms-4/470647fa0f463b6ed3f956cc7fd8afb2/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/0a9328737b101f658e9884041b0ba82b/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/0a9328737b101f658e9884041b0ba82b/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/00568d59a43acb254f195ba1dda4ead2/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/00568d59a43acb254f195ba1dda4ead2/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/73f0511df03379a39bc1ffaff6a54b78/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/73f0511df03379a39bc1ffaff6a54b78/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d7e45a6c6ca38b08db8551660b4aac8/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d7e45a6c6ca38b08db8551660b4aac8/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/63d0f0a20245a57f49643c6e542a3460/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/mindtechm2/.gradle/caches/transforms-4/63d0f0a20245a57f49643c6e542a3460/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/cd0e72668493bcd0a76b28b45745d83b/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/mindtechm2/.gradle/caches/transforms-4/cd0e72668493bcd0a76b28b45745d83b/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
 		INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/mindtechm2/Downloads/SmileAttendance/app/src/main/AndroidManifest.xml
 service#androidx.camera.core.impl.MetadataHolderService
-ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:24:9-33:19
-MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d6d206912c7d1cef6962c6830da61fd/transformed/camera-core-1.3.4/AndroidManifest.xml:29:9-33:78
-MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/6d6d206912c7d1cef6962c6830da61fd/transformed/camera-core-1.3.4/AndroidManifest.xml:29:9-33:78
+ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/bac2a064b7aa1b739b7a6a06b84f4728/transformed/camera-core-1.3.4/AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-core:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/bac2a064b7aa1b739b7a6a06b84f4728/transformed/camera-core-1.3.4/AndroidManifest.xml:29:9-33:78
 	tools:node
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:29:13-31
+		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:29:13-31
 	android:enabled
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:26:13-36
+		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:26:13-36
 	android:exported
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:27:13-37
 	tools:ignore
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:28:13-75
+		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:28:13-75
 	android:name
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:25:13-75
+		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:25:13-75
 meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
-ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
+ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
 	android:value
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
+		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
 	android:name
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/1509812d513392003bc8d1b32ed90fa8/transformed/camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
+		ADDED from [androidx.camera:camera-camera2:1.3.4] /Users/mindtechm2/.gradle/caches/transforms-4/54f2a4225f545f95d2fcaaafe8cebfdc/transformed/camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
 service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
-ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
-MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
+ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
 	android:exported
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:11:13-37
+		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:11:13-37
 	tools:targetApi
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:19:13-32
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:19:13-32
 	android:directBootAware
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:17:13-43
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:17:13-43
 	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:10:13-91
+		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:10:13-91
 meta-data#com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:12:13-14:85
+ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:12:13-14:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:14:17-82
+		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:14:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/67aaaa9114dbb0c36297d0941053e818/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:13:17-114
+		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.1.0] /Users/mindtechm2/.gradle/caches/transforms-4/aa0ca982acb58c3ae323e6dc55358c96/transformed/play-services-mlkit-face-detection-17.1.0/AndroidManifest.xml:13:17-114
 meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
-ADDED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:12:13-14:85
+ADDED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:12:13-14:85
 	android:value
-		ADDED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:14:17-82
+		ADDED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:14:17-82
 	android:name
-		ADDED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/c42f84ce9fe335fd87ecb709c35efbc5/transformed/vision-common-17.2.0/AndroidManifest.xml:13:17-124
+		ADDED from [com.google.mlkit:vision-common:17.2.0] /Users/mindtechm2/.gradle/caches/transforms-4/81c6329de6365d99d0a201183cec599f/transformed/vision-common-17.2.0/AndroidManifest.xml:13:17-124
 provider#com.google.mlkit.common.internal.MlKitInitProvider
-ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:9:9-13:38
+ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:9:9-13:38
 	android:authorities
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:11:13-69
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:11:13-69
 	android:exported
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:12:13-37
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:12:13-37
 	android:initOrder
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:13:13-35
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:13:13-35
 	android:name
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:10:13-78
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:10:13-78
 meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
-ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:20:13-22:85
+ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:20:13-22:85
 	android:value
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:22:17-82
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:22:17-82
 	android:name
-		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/d2d7d3887775b64c801120f193345593/transformed/common-18.11.0/AndroidManifest.xml:21:17-120
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/mindtechm2/.gradle/caches/transforms-4/9d3d69de32796515c28d0d87fc97aba9/transformed/common-18.11.0/AndroidManifest.xml:21:17-120
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/e681cf96df18f96befbee140a651798a/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/mindtechm2/.gradle/caches/transforms-4/5aea2e938de253d031c09f37664265cc/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/31559c862c21964c77a931cdade23a62/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/mindtechm2/.gradle/caches/transforms-4/d882c8866bd5a84b3d97369cc9b12d7d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
 activity#androidx.activity.ComponentActivity
-ADDED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:23:9-25:39
+ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:23:9-25:39
 	android:exported
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:25:13-36
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/079368b00ef17a6e21ab67cabcd60e45/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:24:13-63
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/f4bfe4daecfb123d66e48fa8c329bd18/transformed/ui-test-manifest-1.7.6/AndroidManifest.xml:24:13-63
 activity#androidx.compose.ui.tooling.PreviewActivity
-ADDED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
 	android:exported
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.8] /Users/mindtechm2/.gradle/caches/transforms-4/6eeb287f86f81a3982838f69de2024a5/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.6] /Users/mindtechm2/.gradle/caches/transforms-4/1662577762021142c2e9683677e065ec/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/d4dd02a3897b1441880b8fdd2da8ae00/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/d4dd02a3897b1441880b8fdd2da8ae00/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/181c92940f4bc8c0f871f0f6bd1b63fc/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mindtechm2/.gradle/caches/transforms-4/181c92940f4bc8c0f871f0f6bd1b63fc/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/8d265db809aefe6ba535572b60a1cbcb/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/mindtechm2/.gradle/caches/transforms-4/2df20029ce7537a444b99f5e6e7cd480/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/30b56e77498c803a46ee474377bf4619/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/mindtechm2/.gradle/caches/transforms-4/320265f26665ceeca3bea571e1e9046e/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
 permission#com.smileattendance.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 uses-permission#com.smileattendance.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/e91d43edd169d12026c8450ba62b92db/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] /Users/mindtechm2/.gradle/caches/transforms-4/d5bb0c7e27c6c04f471b7154985dcbfe/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
 	tools:ignore
-		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
 	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
 	android:name
-		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/3491be084682f777f2359a2bc8e00d91/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
-	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mindtechm2/.gradle/caches/transforms-4/d1f2cfcb539cec0ec5c73a5e7cb92c60/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
 meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
-ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
 	android:value
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/626c442d0df60229ae838f0f75a4cd7f/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/mindtechm2/.gradle/caches/transforms-4/6662a9e6742382b3c1497ffe1c072352/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
 service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
-ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
 	android:permission
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
 receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
-ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/95ebe43863020c37fedc120736d2ff3f/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mindtechm2/.gradle/caches/transforms-4/f6dd115e1238bd679ab4a7afce91e708/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/16e301cf918698b0162b7c845acd09ac/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/mindtechm2/.gradle/caches/transforms-4/e818854fe5929707a7732cbe8fb53325/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

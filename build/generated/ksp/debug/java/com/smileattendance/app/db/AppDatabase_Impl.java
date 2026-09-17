@@ -16,6 +16,7 @@ import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -33,13 +34,14 @@ public final class AppDatabase_Impl extends AppDatabase {
   @Override
   @NonNull
   protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(3) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(4) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXISTS `enrolled_users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `uniqueNumber` TEXT NOT NULL, `embedding` BLOB NOT NULL, `enrolledAtMillis` INTEGER NOT NULL, `referencePhotoPath` TEXT NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `attendance_records` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `userId` INTEGER NOT NULL, `userName` TEXT NOT NULL, `userUniqueNumber` TEXT NOT NULL, `timestampMillis` INTEGER NOT NULL, `type` TEXT NOT NULL, `smileProbability` REAL NOT NULL, `matchConfidence` REAL NOT NULL, `photoPath` TEXT NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `enrolled_users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `empCode` INTEGER NOT NULL, `name` TEXT NOT NULL, `hrid` TEXT NOT NULL, `embedding` BLOB NOT NULL, `enrolledAtMillis` INTEGER NOT NULL, `referencePhotoPath` TEXT NOT NULL)");
+        db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_enrolled_users_empCode` ON `enrolled_users` (`empCode`)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `attendance_records` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `empCode` INTEGER NOT NULL, `userName` TEXT NOT NULL, `hrid` TEXT NOT NULL, `timestampMillis` INTEGER NOT NULL, `smileProbability` REAL NOT NULL, `matchConfidence` REAL NOT NULL, `photoPath` TEXT NOT NULL, `syncedToServer` INTEGER NOT NULL)");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8afb09669124da3914e1dbbbbbfd370c')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fde8d3fb68bf19d3b8747ee68976e683')");
       }
 
       @Override
@@ -89,15 +91,17 @@ public final class AppDatabase_Impl extends AppDatabase {
       @NonNull
       public RoomOpenHelper.ValidationResult onValidateSchema(
           @NonNull final SupportSQLiteDatabase db) {
-        final HashMap<String, TableInfo.Column> _columnsEnrolledUsers = new HashMap<String, TableInfo.Column>(6);
+        final HashMap<String, TableInfo.Column> _columnsEnrolledUsers = new HashMap<String, TableInfo.Column>(7);
         _columnsEnrolledUsers.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsEnrolledUsers.put("empCode", new TableInfo.Column("empCode", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsEnrolledUsers.put("name", new TableInfo.Column("name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEnrolledUsers.put("uniqueNumber", new TableInfo.Column("uniqueNumber", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsEnrolledUsers.put("hrid", new TableInfo.Column("hrid", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsEnrolledUsers.put("embedding", new TableInfo.Column("embedding", "BLOB", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsEnrolledUsers.put("enrolledAtMillis", new TableInfo.Column("enrolledAtMillis", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsEnrolledUsers.put("referencePhotoPath", new TableInfo.Column("referencePhotoPath", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysEnrolledUsers = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesEnrolledUsers = new HashSet<TableInfo.Index>(0);
+        final HashSet<TableInfo.Index> _indicesEnrolledUsers = new HashSet<TableInfo.Index>(1);
+        _indicesEnrolledUsers.add(new TableInfo.Index("index_enrolled_users_empCode", true, Arrays.asList("empCode"), Arrays.asList("ASC")));
         final TableInfo _infoEnrolledUsers = new TableInfo("enrolled_users", _columnsEnrolledUsers, _foreignKeysEnrolledUsers, _indicesEnrolledUsers);
         final TableInfo _existingEnrolledUsers = TableInfo.read(db, "enrolled_users");
         if (!_infoEnrolledUsers.equals(_existingEnrolledUsers)) {
@@ -107,14 +111,14 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         final HashMap<String, TableInfo.Column> _columnsAttendanceRecords = new HashMap<String, TableInfo.Column>(9);
         _columnsAttendanceRecords.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsAttendanceRecords.put("userId", new TableInfo.Column("userId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsAttendanceRecords.put("empCode", new TableInfo.Column("empCode", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAttendanceRecords.put("userName", new TableInfo.Column("userName", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsAttendanceRecords.put("userUniqueNumber", new TableInfo.Column("userUniqueNumber", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsAttendanceRecords.put("hrid", new TableInfo.Column("hrid", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAttendanceRecords.put("timestampMillis", new TableInfo.Column("timestampMillis", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsAttendanceRecords.put("type", new TableInfo.Column("type", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAttendanceRecords.put("smileProbability", new TableInfo.Column("smileProbability", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAttendanceRecords.put("matchConfidence", new TableInfo.Column("matchConfidence", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAttendanceRecords.put("photoPath", new TableInfo.Column("photoPath", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsAttendanceRecords.put("syncedToServer", new TableInfo.Column("syncedToServer", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysAttendanceRecords = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesAttendanceRecords = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoAttendanceRecords = new TableInfo("attendance_records", _columnsAttendanceRecords, _foreignKeysAttendanceRecords, _indicesAttendanceRecords);
@@ -126,7 +130,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "8afb09669124da3914e1dbbbbbfd370c", "89aeb379255765413e85660bd30247f6");
+    }, "fde8d3fb68bf19d3b8747ee68976e683", "c98d986c4a484d8720d34af12dc19c50");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;

@@ -1,19 +1,24 @@
 package com.smileattendance.app.db
 
 import androidx.room.Entity
+import androidx.room.Index
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 
-/** A single enrolled person, identified by a face embedding vector captured at enrollment time. */
-@Entity(tableName = "enrolled_users")
+/**
+ * A person enrolled on this device. [empCode] is the server-issued employee code — the real
+ * identity; everything else here is a local cache for offline matching and display.
+ */
+@Entity(tableName = "enrolled_users", indices = [Index(value = ["empCode"], unique = true)])
 @TypeConverters(EmbeddingConverter::class)
 data class EnrolledUser(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val empCode: Int,
     val name: String,
-    val uniqueNumber: String,
+    val hrid: String,
     val embedding: FloatArray,
     val enrolledAtMillis: Long,
     val referencePhotoPath: String
@@ -22,29 +27,22 @@ data class EnrolledUser(
     override fun hashCode(): Int = id.hashCode()
 }
 
-enum class AttendanceType { CHECK_IN, CHECK_OUT }
-
-/** One attendance event — either the first (check-in) or second (check-out) scan of the day for a person. */
+/**
+ * One attendance punch. The server has no check-in/check-out concept — this is just a
+ * timestamped, smile-verified sighting of a person, queued locally until [syncedToServer].
+ */
 @Entity(tableName = "attendance_records")
 data class AttendanceRecord(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
-    val userId: Long,
+    val empCode: Int,
     val userName: String,
-    val userUniqueNumber: String,
+    val hrid: String,
     val timestampMillis: Long,
-    val type: AttendanceType,
     val smileProbability: Float,
     val matchConfidence: Float,
-    val photoPath: String
+    val photoPath: String,
+    val syncedToServer: Boolean = false
 )
-
-class AttendanceTypeConverter {
-    @TypeConverter
-    fun fromType(type: AttendanceType): String = type.name
-
-    @TypeConverter
-    fun toType(value: String): AttendanceType = AttendanceType.valueOf(value)
-}
 
 /** Room can't persist FloatArray natively; store as a packed byte blob. */
 class EmbeddingConverter {

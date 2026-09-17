@@ -8,10 +8,10 @@ import androidx.room.TypeConverters
 
 @Database(
     entities = [EnrolledUser::class, AttendanceRecord::class],
-    version = 3,
+    version = 4,
     exportSchema = false
 )
-@TypeConverters(EmbeddingConverter::class, AttendanceTypeConverter::class)
+@TypeConverters(EmbeddingConverter::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun enrolledUserDao(): EnrolledUserDao
     abstract fun attendanceDao(): AttendanceDao
@@ -26,7 +26,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "smile-attendance.db"
                 )
-                    .addMigrations(MIGRATION_2_3)
+                    .addMigrations(MIGRATION_2_3, MIGRATION_3_4)
                     .build()
                     .also { instance = it }
             }

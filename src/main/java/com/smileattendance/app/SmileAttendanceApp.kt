@@ -21,6 +21,12 @@ class SmileAttendanceApp : Application() {
         Thread.setDefaultUncaughtExceptionHandler { _, throwable ->
             Log.e(TAG, "Uncaught exception on kiosk — scheduling restart", throwable)
             try {
+                // The process is about to die, so there's no Compose tree left to show a message
+                // in — instead, leave a flag the *next* launch reads to surface "we recovered
+                // from a problem" to whoever's standing at the kiosk, instead of recovering silently.
+                getSharedPreferences(PREFS_NAME, MODE_PRIVATE).edit()
+                    .putBoolean(KEY_RECOVERED_FROM_CRASH, true)
+                    .apply()
                 scheduleRestart()
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to schedule restart", e)
@@ -46,5 +52,7 @@ class SmileAttendanceApp : Application() {
 
     companion object {
         private const val TAG = "SmileAttendanceApp"
+        const val PREFS_NAME = "crash_recovery"
+        const val KEY_RECOVERED_FROM_CRASH = "recovered_from_crash"
     }
 }

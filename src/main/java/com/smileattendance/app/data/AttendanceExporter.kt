@@ -21,16 +21,17 @@ object AttendanceExporter {
         val file = File(dir, "attendance_${System.currentTimeMillis()}.csv")
 
         FileWriter(file).use { writer ->
-            writer.append("Name,ID Number,Type,Date,Time,Smile Confidence %,Match Confidence %\n")
+            writer.append("Name,HR ID,Emp Code,Date,Time,Smile Confidence %,Match Confidence %,Synced\n")
             for (record in records) {
                 val date = Date(record.timestampMillis)
                 writer.append(csvField(record.userName)).append(',')
-                writer.append(csvField(record.userUniqueNumber)).append(',')
-                writer.append(record.type.name).append(',')
+                writer.append(csvField(record.hrid)).append(',')
+                writer.append(record.empCode.toString()).append(',')
                 writer.append(dateFormat.format(date)).append(',')
                 writer.append(timeFormat.format(date)).append(',')
                 writer.append((record.smileProbability * 100).toInt().toString()).append(',')
-                writer.append((record.matchConfidence * 100).toInt().toString()).append('\n')
+                writer.append((record.matchConfidence * 100).toInt().toString()).append(',')
+                writer.append(if (record.syncedToServer) "yes" else "no").append('\n')
             }
         }
 

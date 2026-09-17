@@ -15,10 +15,10 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Badge
 import androidx.compose.material.icons.filled.EmojiEmotions
 import androidx.compose.material.icons.filled.Groups
-import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.PersonAddAlt
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -44,15 +44,15 @@ fun HomeScreen(
     viewModel: AttendanceViewModel,
     onEnroll: () -> Unit,
     onCheckIn: () -> Unit,
-    onHistory: () -> Unit
+    onHistory: () -> Unit,
+    onEmployees: () -> Unit
 ) {
     val users by viewModel.users.collectAsState()
     val records by viewModel.records.collectAsState()
     val todayCount = records.count {
-        it.type == com.smileattendance.app.db.AttendanceType.CHECK_IN &&
-            java.time.Instant.ofEpochMilli(it.timestampMillis)
-                .atZone(java.time.ZoneId.systemDefault()).toLocalDate() ==
-                java.time.LocalDate.now()
+        java.time.Instant.ofEpochMilli(it.timestampMillis)
+            .atZone(java.time.ZoneId.systemDefault()).toLocalDate() ==
+            java.time.LocalDate.now()
     }
 
     Scaffold(
@@ -70,7 +70,7 @@ fun HomeScreen(
                 },
                 navigationIcon = {
                     IconButton(onClick = onCheckIn) {
-                        Icon(Icons.Filled.ArrowBack, contentDescription = "Back to kiosk")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back to kiosk")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -99,7 +99,7 @@ fun HomeScreen(
                     modifier = Modifier.weight(1f),
                     icon = Icons.Filled.EmojiEmotions,
                     value = todayCount.toString(),
-                    label = "Checked in today"
+                    label = "Scans today"
                 )
             }
 
@@ -116,18 +116,18 @@ fun HomeScreen(
             ActionCard(
                 icon = Icons.Filled.PersonAddAlt,
                 title = "Enroll New Person",
-                subtitle = "Register a face and ID number",
+                subtitle = "Register a face and HR ID (supervisor sign-in required)",
                 containerColor = MaterialTheme.colorScheme.secondaryContainer,
                 contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
                 onClick = onEnroll
             )
             ActionCard(
-                icon = Icons.Filled.History,
-                title = "Attendance History",
-                subtitle = "View all recorded check-ins",
+                icon = Icons.Filled.Badge,
+                title = "Employees",
+                subtitle = "View synced roster, re-enroll a changed face",
                 containerColor = MaterialTheme.colorScheme.surfaceVariant,
                 contentColor = MaterialTheme.colorScheme.onSurfaceVariant,
-                onClick = onHistory
+                onClick = onEmployees
             )
         }
     }

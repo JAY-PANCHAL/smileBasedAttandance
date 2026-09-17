@@ -23,6 +23,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Cameraswitch
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.ErrorOutline
+import androidx.compose.material.icons.automirrored.filled.HelpOutline
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PersonOff
 import androidx.compose.material.icons.filled.Settings
@@ -52,13 +53,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.smileattendance.app.camera.CameraPreview
 import com.smileattendance.app.data.CheckInOutcome
-import com.smileattendance.app.db.AttendanceType
+import com.smileattendance.app.data.FaceMatchResult
 import com.smileattendance.app.ml.SmileFaceAnalyzer
 import com.smileattendance.app.ui.theme.Danger
 import com.smileattendance.app.ui.theme.DangerContainer
 import com.smileattendance.app.ui.theme.Success
 import com.smileattendance.app.ui.theme.SuccessContainer
 import com.smileattendance.app.ui.theme.Warning
+import com.smileattendance.app.ui.theme.WarningContainer
 
 @Composable
 fun CheckInScreen(
@@ -127,7 +129,10 @@ fun CheckInScreen(
                             }
                             currentSmileProb = result.smileProbability
                             viewModel.previewRecognize(result.faceBitmap)
-                            if (!hasTriggered && !busy && result.smileProbability >= SmileFaceAnalyzer.SMILE_THRESHOLD) {
+
+                            val matched = livePreviewMatch as? FaceMatchResult.Matched
+                            val readyForThisPerson = matched != null && viewModel.isReadyToCommit(matched.user.empCode)
+                            if (!hasTriggered && !busy && readyForThisPerson && result.smileProbability >= SmileFaceAnalyzer.SMILE_THRESHOLD) {
                                 hasTriggered = true
                                 viewModel.checkIn(result.faceBitmap, result.smileProbability)
                             }
@@ -208,39 +213,45 @@ private fun Modifier.clipToRoundedCard(radius: androidx.compose.ui.unit.Dp = 20.
     this.clip(RoundedCornerShape(radius))
 
 @Composable
-private fun RecognizedPersonRow(match: Pair<com.smileattendance.app.db.EnrolledUser, Float>?) {
-    if (match == null) return
-    val (user, score) = match
+private fun RecognizedPersonRow(match: FaceMatchResult?) {
+    val (icon, containerColor, contentColor, text) = when (match) {
+        is FaceMatchResult.Matched -> RowStyle(
+            Icons.Filled.Person, SuccessContainer, Success,
+            "${match.user.name} · ${match.user.hrid} (${(match.score * 100).toInt()}%)"
+        )
+        is FaceMatchResult.Ambiguous -> RowStyle(
+            Icons.AutoMirrored.Filled.HelpOutline, WarningContainer, Warning,
+            "Can't tell who this is — hold still and look at the camera"
+        )
+        else -> return
+    }
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .padding(bottom = 10.dp)
             .clip(RoundedCornerShape(12.dp))
-            .background(SuccessContainer)
+            .background(containerColor)
             .padding(horizontal = 12.dp, vertical = 8.dp)
     ) {
-        Icon(Icons.Filled.Person, contentDescription = null, tint = Success, modifier = Modifier.size(20.dp))
+        Icon(icon, contentDescription = null, tint = contentColor, modifier = Modifier.size(20.dp))
         Spacer(modifier = Modifier.width(8.dp))
-        Text(
-            "${user.name} · ID ${user.uniqueNumber}",
-            style = MaterialTheme.typography.titleMedium,
-            color = Success
-        )
-        Spacer(modifier = Modifier.width(6.dp))
-        Text(
-            "(${(score * 100).toInt()}%)",
-            style = MaterialTheme.typography.bodySmall,
-            color = Success.copy(alpha = 0.8f)
-        )
+        Text(text, style = MaterialTheme.typography.titleMedium, color = contentColor)
     }
 }
+
+private data class RowStyle(
+    val icon: androidx.compose.ui.graphics.vector.ImageVector,
+    val containerColor: Color,
+    val contentColor: Color,
+    val text: String
+)
 
 @Composable
 private fun FaceGuideOverlay(smileProbability: Float) {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Box(
             modifier = Modifier
-                .size(width = 220.dp, height = 280.dp)
+                .size(width = 280.dp, height = 360.dp)
                 .border(3.dp, smileColor(smileProbability), RoundedCornerShape(140.dp))
         )
     }
@@ -258,6 +269,7 @@ private fun OutcomeIcon(outcome: CheckInOutcome) {
     val (icon, tint) = when (outcome) {
         is CheckInOutcome.Success -> Icons.Filled.CheckCircle to Success
         is CheckInOutcome.NoMatch -> Icons.Filled.PersonOff to Danger
+        is CheckInOutcome.Ambiguous -> Icons.AutoMirrored.Filled.HelpOutline to Warning
         CheckInOutcome.NoEnrolledUsers -> Icons.Filled.PersonOff to Danger
     }
     Icon(icon, contentDescription = null, tint = tint, modifier = Modifier.size(96.dp))
@@ -266,18 +278,20 @@ private fun OutcomeIcon(outcome: CheckInOutcome) {
 @Composable
 private fun OutcomeCard(outcome: CheckInOutcome) {
     val (containerColor, contentColor, title, message) = when (outcome) {
-        is CheckInOutcome.Success -> {
-            val action = if (outcome.record.type == AttendanceType.CHECK_IN) "Checked in" else "Checked out"
-            OutcomeStyle(
-                SuccessContainer, Success,
-                action,
-                "${outcome.user.name} (ID ${outcome.user.uniqueNumber}) · match ${(outcome.record.matchConfidence * 100).toInt()}%"
-            )
-        }
+        is CheckInOutcome.Success -> OutcomeStyle(
+            SuccessContainer, Success,
+            "Checked in",
+            "${outcome.user.name} · ${outcome.user.hrid} · match ${(outcome.record.matchConfidence * 100).toInt()}%"
+        )
         is CheckInOutcome.NoMatch -> OutcomeStyle(
             DangerContainer, Danger,
             "Face not recognized",
             "Best match was only ${(outcome.bestScore * 100).toInt()}%. Enroll first, or retry with better lighting."
+        )
+        is CheckInOutcome.Ambiguous -> OutcomeStyle(
+            WarningContainer, Warning,
+            "Couldn't confirm identity",
+            "Two enrolled people scored too close together (${(outcome.bestScore * 100).toInt()}% vs ${(outcome.secondScore * 100).toInt()}%). Try again, facing the camera directly."
         )
         CheckInOutcome.NoEnrolledUsers -> OutcomeStyle(
             DangerContainer, Danger,

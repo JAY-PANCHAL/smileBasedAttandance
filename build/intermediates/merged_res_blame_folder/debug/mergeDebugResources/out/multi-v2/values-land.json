@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.smileattendance.app-mergeDebugResources-68:/values-land/values-land.xml",
+            "outputFile": "com.smileattendance.app-mergeDebugResources-70:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/mindtechm2/.gradle/caches/transforms-4/7db74a47f9308865057bad070e9589a5/transformed/appcompat-1.6.1/res/values-land/values-land.xml",
+                    "source": "/Users/mindtechm2/.gradle/caches/transforms-4/2d3f491cd9eea193abfec17a258f5cfc/transformed/appcompat-1.6.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

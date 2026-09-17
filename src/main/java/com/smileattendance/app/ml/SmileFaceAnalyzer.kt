@@ -52,7 +52,8 @@ class SmileFaceAnalyzer(
                     // frame (odd YUV stride, corrupt buffer) must not take the whole app down.
                     try {
                         val largest = faces.maxByOrNull { it.boundingBox.width() * it.boundingBox.height() }
-                        if (largest == null || largest.smilingProbability == null) {
+                        val imageArea = inputImage.width * inputImage.height
+                        if (largest == null || largest.smilingProbability == null || !isGoodQuality(largest, imageArea)) {
                             onResult(null)
                         } else {
                             val fullBitmap = imageProxy.toBitmap().rotated(rotationDegrees.toFloat())
@@ -73,6 +74,24 @@ class SmileFaceAnalyzer(
         }
     }
 
+    /**
+     * A face embedding computed from a turned head or a distant, tiny face is unreliable input
+     * to the matcher — this is often the real root cause of a "confident" wrong match, not the
+     * matching math itself. Reject those frames before they ever reach the embedder.
+     */
+    private fun isGoodQuality(face: Face, imageArea: Int): Boolean {
+        val faceArea = face.boundingBox.width() * face.boundingBox.height()
+        val areaRatio = faceArea.toFloat() / imageArea.toFloat()
+        if (areaRatio < MIN_FACE_AREA_RATIO) return false
+
+        // headEulerAngleY = left/right turn, headEulerAngleZ = tilt. Both are always populated
+        // by ML Kit's face detector regardless of classification/landmark mode.
+        if (kotlin.math.abs(face.headEulerAngleY) > MAX_HEAD_YAW_DEGREES) return false
+        if (kotlin.math.abs(face.headEulerAngleZ) > MAX_HEAD_ROLL_DEGREES) return false
+
+        return true
+    }
+
     private fun cropToFace(bitmap: Bitmap, box: Rect, imgWidth: Int, imgHeight: Int): Bitmap? {
         val left = box.left.coerceIn(0, imgWidth - 1)
         val top = box.top.coerceIn(0, imgHeight - 1)
@@ -90,6 +109,13 @@ class SmileFaceAnalyzer(
         private const val TAG = "SmileFaceAnalyzer"
 
         /** How confident ML Kit must be that the person is smiling before we treat it as a valid trigger. */
-        const val SMILE_THRESHOLD = 0.75f
+        const val SMILE_THRESHOLD = 0.60f
+
+        /** A face must fill at least this fraction of the frame area — too small/far means a low-quality embedding. */
+        const val MIN_FACE_AREA_RATIO = 0.06f
+
+        /** Reject frames where the head is turned or tilted more than this — a side profile embeds unreliably. */
+        const val MAX_HEAD_YAW_DEGREES = 18f
+        const val MAX_HEAD_ROLL_DEGREES = 18f
     }
 }

@@ -82,8 +82,22 @@ class FaceEmbedder(context: Context) {
             return dot
         }
 
-        /** Empirically reasonable threshold for MobileFaceNet cosine similarity on 112x112 crops. */
-        const val MATCH_THRESHOLD = 0.6f
+        /**
+         * Minimum cosine similarity to treat two faces as the same person. This is deliberately
+         * strict for production use — 0.6 was permissive enough to let genuinely different
+         * people match. Tightened alongside a minimum-margin check and multi-frame consensus
+         * (see AttendanceRepository / AttendanceViewModel) so a single ambiguous frame is never
+         * enough on its own to accept a match.
+         */
+        const val MATCH_THRESHOLD = 0.80f
+
+        /**
+         * The best match must beat the second-best enrolled match by at least this much cosine
+         * similarity. Without this, two enrolled people who both score above MATCH_THRESHOLD
+         * (e.g. 0.81 and 0.79) would silently resolve to "whichever scored higher" even though
+         * the system had no real confidence which one it was looking at.
+         */
+        const val MIN_MATCH_MARGIN = 0.06f
     }
 }
 

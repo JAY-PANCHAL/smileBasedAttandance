@@ -22,8 +22,10 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.CalendarMonth
+import androidx.compose.material.icons.filled.CloudDone
+import androidx.compose.material.icons.filled.CloudQueue
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.EmojiEmotions
 import androidx.compose.material.icons.filled.EventBusy
@@ -63,12 +65,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.smileattendance.app.data.AttendanceExporter
 import com.smileattendance.app.db.AttendanceRecord
-import com.smileattendance.app.db.AttendanceType
 import com.smileattendance.app.db.EnrolledUser
 import com.smileattendance.app.ui.theme.Success
 import com.smileattendance.app.ui.theme.SuccessContainer
-import com.smileattendance.app.ui.theme.Warning
-import com.smileattendance.app.ui.theme.WarningContainer
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -81,32 +80,32 @@ fun HistoryScreen(
 ) {
     val records by viewModel.records.collectAsState()
     val users by viewModel.users.collectAsState()
-    val photoByUserId = remember(users) { users.associate { it.id to it.referencePhotoPath } }
+    val photoByEmpCode = remember(users) { users.associate { it.empCode to it.referencePhotoPath } }
     val dateFormat = remember { SimpleDateFormat("EEE, MMM d · HH:mm:ss", Locale.getDefault()) }
     val context = LocalContext.current
 
     var searchQuery by remember { mutableStateOf("") }
-    var selectedUserId by remember { mutableStateOf<Long?>(null) }
+    var selectedEmpCode by remember { mutableStateOf<Int?>(null) }
     var selectedDayStartMillis by remember { mutableStateOf<Long?>(null) }
     var showPersonPicker by remember { mutableStateOf(false) }
     var showDatePicker by remember { mutableStateOf(false) }
 
-    val filteredRecords = remember(records, searchQuery, selectedUserId, selectedDayStartMillis) {
+    val filteredRecords = remember(records, searchQuery, selectedEmpCode, selectedDayStartMillis) {
         val query = searchQuery.trim()
         records.filter { record ->
             val matchesQuery = query.isEmpty() ||
                 record.userName.contains(query, ignoreCase = true) ||
-                record.userUniqueNumber.contains(query, ignoreCase = true)
-            val matchesPerson = selectedUserId == null || record.userId == selectedUserId
+                record.hrid.contains(query, ignoreCase = true)
+            val matchesPerson = selectedEmpCode == null || record.empCode == selectedEmpCode
             val matchesDate = selectedDayStartMillis == null || isSameDay(record.timestampMillis, selectedDayStartMillis!!)
             matchesQuery && matchesPerson && matchesDate
         }
     }
 
-    val selectedUserName = users.firstOrNull { it.id == selectedUserId }?.name
+    val selectedUserName = users.firstOrNull { it.empCode == selectedEmpCode }?.name
     val shortDateFormat = remember { SimpleDateFormat("MMM d, yyyy", Locale.getDefault()) }
     val selectedDateLabel = selectedDayStartMillis?.let { shortDateFormat.format(Date(it)) }
-    val hasActiveFilters = searchQuery.isNotBlank() || selectedUserId != null || selectedDayStartMillis != null
+    val hasActiveFilters = searchQuery.isNotBlank() || selectedEmpCode != null || selectedDayStartMillis != null
 
     Scaffold(
         topBar = {
@@ -114,7 +113,7 @@ fun HistoryScreen(
                 title = { Text("Attendance History", fontWeight = FontWeight.Bold) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
-                        Icon(Icons.Filled.ArrowBack, contentDescription = "Back")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                     }
                 },
                 actions = {
@@ -147,7 +146,7 @@ fun HistoryScreen(
                 OutlinedTextField(
                     value = searchQuery,
                     onValueChange = { searchQuery = it },
-                    placeholder = { Text("Search by name or ID") },
+                    placeholder = { Text("Search by name or HR ID") },
                     leadingIcon = { Icon(Icons.Filled.Search, contentDescription = null) },
                     trailingIcon = {
                         if (searchQuery.isNotEmpty()) {
@@ -166,7 +165,7 @@ fun HistoryScreen(
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     FilterChip(
-                        selected = selectedUserId != null,
+                        selected = selectedEmpCode != null,
                         onClick = { showPersonPicker = true },
                         leadingIcon = { Icon(Icons.Filled.Person, contentDescription = null, modifier = Modifier.size(18.dp)) },
                         label = { Text(selectedUserName ?: "All people") }
@@ -180,7 +179,7 @@ fun HistoryScreen(
                     if (hasActiveFilters) {
                         IconButton(onClick = {
                             searchQuery = ""
-                            selectedUserId = null
+                            selectedEmpCode = null
                             selectedDayStartMillis = null
                         }) {
                             Icon(Icons.Filled.FilterAltOff, contentDescription = "Clear all filters")
@@ -211,7 +210,7 @@ fun HistoryScreen(
                     verticalArrangement = Arrangement.spacedBy(10.dp)
                 ) {
                     items(filteredRecords) { record: AttendanceRecord ->
-                        AttendanceRow(record, dateFormat, photoByUserId[record.userId])
+                        AttendanceRow(record, dateFormat, photoByEmpCode[record.empCode])
                     }
                 }
             }
@@ -221,8 +220,8 @@ fun HistoryScreen(
     if (showPersonPicker) {
         PersonPickerDialog(
             users = users,
-            selectedUserId = selectedUserId,
-            onSelect = { selectedUserId = it; showPersonPicker = false },
+            selectedEmpCode = selectedEmpCode,
+            onSelect = { selectedEmpCode = it; showPersonPicker = false },
             onDismiss = { showPersonPicker = false }
         )
     }
@@ -269,14 +268,14 @@ private fun EmptyState(message: String) {
 @Composable
 private fun PersonPickerDialog(
     users: List<EnrolledUser>,
-    selectedUserId: Long?,
-    onSelect: (Long?) -> Unit,
+    selectedEmpCode: Int?,
+    onSelect: (Int?) -> Unit,
     onDismiss: () -> Unit
 ) {
     var query by remember { mutableStateOf("") }
     val filtered = remember(users, query) {
         if (query.isBlank()) users
-        else users.filter { it.name.contains(query, true) || it.uniqueNumber.contains(query, true) }
+        else users.filter { it.name.contains(query, true) || it.hrid.contains(query, true) }
     }
 
     androidx.compose.material3.AlertDialog(
@@ -294,11 +293,11 @@ private fun PersonPickerDialog(
                 )
                 LazyColumn(modifier = Modifier.height(320.dp).padding(top = 8.dp)) {
                     item {
-                        PersonRow("All people", selectedUserId == null) { onSelect(null) }
+                        PersonRow("All people", selectedEmpCode == null) { onSelect(null) }
                     }
                     items(filtered) { user ->
-                        PersonRow("${user.name} · ${user.uniqueNumber}", selectedUserId == user.id) {
-                            onSelect(user.id)
+                        PersonRow("${user.name} · ${user.hrid}", selectedEmpCode == user.empCode) {
+                            onSelect(user.empCode)
                         }
                     }
                 }
@@ -354,12 +353,12 @@ private fun AttendanceRow(record: AttendanceRecord, dateFormat: SimpleDateFormat
             Column(modifier = Modifier.weight(1f).padding(horizontal = 12.dp)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(
-                        "${record.userName} · ${record.userUniqueNumber}",
+                        "${record.userName} · ${record.hrid}",
                         style = MaterialTheme.typography.titleMedium,
                         modifier = Modifier.weight(1f, fill = false)
                     )
                     Spacer(modifier = Modifier.width(8.dp))
-                    TypeBadge(record.type)
+                    SyncStatusIcon(record.syncedToServer)
                 }
                 Text(dateFormat.format(Date(record.timestampMillis)), style = MaterialTheme.typography.bodySmall)
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -381,23 +380,19 @@ private fun AttendanceRow(record: AttendanceRecord, dateFormat: SimpleDateFormat
 }
 
 @Composable
-private fun TypeBadge(type: AttendanceType) {
-    val (label, color, container) = if (type == AttendanceType.CHECK_IN)
-        Triple("IN", Success, SuccessContainer) else Triple("OUT", Warning, WarningContainer)
-    Surface(shape = RoundedCornerShape(8.dp), color = container) {
-        Text(
-            label,
-            style = MaterialTheme.typography.labelLarge,
-            color = color,
-            modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp)
-        )
-    }
+private fun SyncStatusIcon(synced: Boolean) {
+    Icon(
+        if (synced) Icons.Filled.CloudDone else Icons.Filled.CloudQueue,
+        contentDescription = if (synced) "Synced to server" else "Waiting to sync",
+        tint = if (synced) Success else MaterialTheme.colorScheme.onSurfaceVariant,
+        modifier = Modifier.size(16.dp)
+    )
 }
 
 @Composable
 private fun ProfileThumbnail(photoPath: String?) {
     val bitmap = remember(photoPath) {
-        photoPath?.let { BitmapFactory.decodeFile(it)?.asImageBitmap() }
+        photoPath?.takeIf { it.isNotBlank() }?.let { BitmapFactory.decodeFile(it)?.asImageBitmap() }
     }
     Surface(shape = CircleShape, color = SuccessContainer, modifier = Modifier.size(44.dp)) {
         if (bitmap != null) {
