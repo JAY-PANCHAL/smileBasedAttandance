@@ -1,11 +1,16 @@
 package com.smileattendance.app.camera
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.hardware.display.DisplayManager
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ExperimentalGetImage
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
+import androidx.camera.core.UseCase
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.compose.foundation.layout.fillMaxSize
@@ -46,11 +51,34 @@ fun CameraPreview(
     val analyzer = remember { SmileFaceAnalyzer(onFaceResult) }
     val previewView = remember { PreviewView(context) }
 
+    val boundUseCases = remember { mutableListOf<UseCase>() }
+
     DisposableEffect(Unit) {
         onDispose {
             cameraExecutor.shutdown()
             analyzer.close()
         }
+    }
+
+    // The activity isn't recreated on rotation, so the use cases must be told the new display
+    // rotation — otherwise ML Kit receives frames rotated 90°/180° and finds no face.
+    DisposableEffect(Unit) {
+        val displayManager = context.getSystemService(Context.DISPLAY_SERVICE) as DisplayManager
+        val listener = object : DisplayManager.DisplayListener {
+            override fun onDisplayAdded(displayId: Int) = Unit
+            override fun onDisplayRemoved(displayId: Int) = Unit
+            override fun onDisplayChanged(displayId: Int) {
+                val rotation = previewView.display?.takeIf { it.displayId == displayId }?.rotation ?: return
+                boundUseCases.forEach { useCase ->
+                    when (useCase) {
+                        is Preview -> useCase.targetRotation = rotation
+                        is ImageAnalysis -> useCase.targetRotation = rotation
+                    }
+                }
+            }
+        }
+        displayManager.registerDisplayListener(listener, Handler(Looper.getMainLooper()))
+        onDispose { displayManager.unregisterDisplayListener(listener) }
     }
 
     LaunchedEffect(lensFacing) {
@@ -83,6 +111,12 @@ fun CameraPreview(
                     preview,
                     imageAnalysis
                 )
+                previewView.display?.rotation?.let { rotation ->
+                    preview.targetRotation = rotation
+                    imageAnalysis.targetRotation = rotation
+                }
+                boundUseCases.clear()
+                boundUseCases.addAll(listOf(preview, imageAnalysis))
                 break
             } catch (e: Exception) {
                 attempt++

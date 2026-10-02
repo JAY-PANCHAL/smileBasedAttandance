@@ -13,6 +13,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -251,8 +254,10 @@ private fun FaceGuideOverlay(smileProbability: Float) {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Box(
             modifier = Modifier
-                .size(width = 280.dp, height = 360.dp)
-                .border(3.dp, smileColor(smileProbability), RoundedCornerShape(140.dp))
+                .heightIn(max = 360.dp)
+                .fillMaxHeight(0.88f)
+                .aspectRatio(0.78f, matchHeightConstraintsFirst = true)
+                .border(3.dp, smileColor(smileProbability), RoundedCornerShape(percent = 50))
         )
     }
 }

@@ -2,6 +2,7 @@
 
 package com.smileattendance.app.ui
 
+import android.content.res.Configuration
 import androidx.camera.core.CameraSelector
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
@@ -52,6 +54,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.FocusDirection
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -90,6 +93,7 @@ fun EnrollScreen(
     val busy by viewModel.busy.collectAsState()
     val isReEnroll = existingUser != null
     val focusManager = LocalFocusManager.current
+    val isLandscape = LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE
 
     Scaffold(
         topBar = {
@@ -108,13 +112,8 @@ fun EnrollScreen(
             )
         }
     ) { padding ->
-        Row(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(padding)
-                .imePadding()
-        ) {
-            Box(modifier = Modifier.weight(1f).fillMaxHeight().padding(16.dp)) {
+        val cameraPane: @Composable (Modifier) -> Unit = { paneModifier ->
+            Box(modifier = paneModifier.padding(16.dp)) {
                 Box(modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(20.dp))) {
                     CameraPreview(lensFacing = lensFacing, onFaceResult = { latestFace = it })
 
@@ -136,11 +135,13 @@ fun EnrollScreen(
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                         Box(
                             modifier = Modifier
-                                .size(width = 220.dp, height = 280.dp)
+                                .heightIn(max = 360.dp)
+                                .fillMaxHeight(0.75f)
+                                .aspectRatio(0.78f, matchHeightConstraintsFirst = true)
                                 .border(
                                     3.dp,
                                     if (latestFace != null) Success else Color.White.copy(alpha = 0.8f),
-                                    RoundedCornerShape(140.dp)
+                                    RoundedCornerShape(percent = 50)
                                 )
                         )
                     }
@@ -160,11 +161,11 @@ fun EnrollScreen(
                 }
             }
 
+        }
+
+        val formPane: @Composable (Modifier) -> Unit = { paneModifier ->
             Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxHeight()
-                    .padding(horizontal = 20.dp, vertical = 8.dp),
+                modifier = paneModifier.padding(horizontal = 20.dp, vertical = 8.dp),
                 verticalArrangement = Arrangement.Center
             ) {
                 OutlinedTextField(
@@ -245,6 +246,19 @@ fun EnrollScreen(
                         maxLines = 1
                     )
                 }
+            }
+        }
+
+        val rootModifier = Modifier.fillMaxSize().padding(padding).imePadding()
+        if (isLandscape) {
+            Row(rootModifier) {
+                cameraPane(Modifier.weight(1f).fillMaxHeight())
+                formPane(Modifier.weight(1f).fillMaxHeight())
+            }
+        } else {
+            Column(rootModifier) {
+                cameraPane(Modifier.weight(1f).fillMaxWidth())
+                formPane(Modifier.fillMaxWidth())
             }
         }
     }
