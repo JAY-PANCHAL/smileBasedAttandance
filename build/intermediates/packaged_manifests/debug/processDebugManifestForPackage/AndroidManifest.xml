@@ -38,8 +38,9 @@
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.smileattendance.app.MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden"
             android:exported="true"
-            android:screenOrientation="sensorLandscape"
+            android:screenOrientation="fullSensor"
             android:theme="@style/Theme.SmileAttendance.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
